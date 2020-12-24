@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "WeicyCommonMacros.h"
 
 #import "WeicyCommon/WeicyCommon.h"
 
