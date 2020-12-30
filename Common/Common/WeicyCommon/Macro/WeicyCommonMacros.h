@@ -126,6 +126,8 @@
 #define K_PROPERTY_STRING(name) @property(nonatomic,copy)NSString *name
 #define K_PROPERTY_ASSIGN(name) @property(nonatomic,assign)NSInteger name
 #define K_PROPERTY_STRONG(type,name) @property(nonatomic,strong)type *name
+// 获取类名
+#define K_GET_CLASS_NAME(x) [NSString stringWithUTF8String:object_getClassName([x class])]
 
 // runtime 为对象类型属性快速生成get/set方法
 #define K_SYNTHESIZE_CATEGORY_OBJ_PROPERTY(propertyGetter, propertySetter)\

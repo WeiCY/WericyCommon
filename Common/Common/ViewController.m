@@ -6,14 +6,13 @@
 //
 
 #import "ViewController.h"
-#import "WeicyCommonMacros.h"
 
 #import "WeicyCommon/WeicyCommon.h"
-
 
 @interface ViewController ()
 
 @property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, assign) NSInteger *index;
 
 @end
 

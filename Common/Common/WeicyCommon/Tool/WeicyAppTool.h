@@ -40,6 +40,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)weicy_gotoSafariBrowserWithURL:(NSString *_Nonnull)urlStr;
 
+#pragma mark - 强制让App直接退出（非闪退，非崩溃）
+/// 强制让App直接退出（非闪退，非崩溃）
++ (void)weicy_exitApplicationDuration:(NSTimeInterval)interval animations:(void (^)(void))animations;
+
 @end
 
 NS_ASSUME_NONNULL_END

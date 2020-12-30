@@ -44,4 +44,11 @@
     }];
 }
 
+#pragma mark - 强制让App直接退出（非闪退，非崩溃）
++ (void)weicy_exitApplicationDuration:(NSTimeInterval)interval animations:(void (^)(void))animations {
+    [UIView animateWithDuration:interval animations:animations completion:^(BOOL finished) {
+        exit(0);
+    }];
+}
+
 @end
