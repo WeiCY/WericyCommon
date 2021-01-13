@@ -10,9 +10,9 @@
 //
 
 #import "UITableView+YYAdd.h"
-#import "YYKitMacro.h"
-
-YYSYNTH_DUMMY_CLASS(UITableView_YYAdd)
+//#import "YYKitMacro.h"
+//
+//YYSYNTH_DUMMY_CLASS(UITableView_YYAdd)
 
 
 @implementation UITableView (YYAdd)
