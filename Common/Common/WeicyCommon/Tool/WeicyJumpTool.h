@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param vcName 目标控制器命名
  @param param 额外参数，参数说明：param的key值对应目标控制器需要赋值的的属性名
  */
-+ (void)weicy_jumpToVC:(NSString *)vcName param:(NSDictionary *)param;
++ (void)weicy_jumpToVC:(NSString *)vcName param:(nullable NSDictionary *)param;
 
 @end
 

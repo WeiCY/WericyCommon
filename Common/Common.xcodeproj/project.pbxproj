@@ -13,11 +13,15 @@
 		F524185125831DDA003713B8 /* NSString+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F524185025831DDA003713B8 /* NSString+WeicyCommon.m */; };
 		F52418572583204E003713B8 /* NSData+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F52418562583204E003713B8 /* NSData+WeicyCommon.m */; };
 		F554012225876CF500284586 /* UIGestureRecognizer+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F554012125876CF500284586 /* UIGestureRecognizer+WeicyCommon.m */; };
+		F569FA7F25A2F874000835DE /* UIViewController+ImagePickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F569FA7D25A2F874000835DE /* UIViewController+ImagePickerManager.m */; };
 		F572D1EC2591A23300594AE3 /* UILabel+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F572D1EB2591A23300594AE3 /* UILabel+WeicyCommon.m */; };
 		F572D2CE2593257800594AE3 /* UIControl+WeicyAddForCombo.m in Sources */ = {isa = PBXBuildFile; fileRef = F572D2CD2593257800594AE3 /* UIControl+WeicyAddForCombo.m */; };
 		F572D3B62595831000594AE3 /* AppDelegate+WeicyGT.m in Sources */ = {isa = PBXBuildFile; fileRef = F572D3B42595831000594AE3 /* AppDelegate+WeicyGT.m */; };
+		F58F2C8B25A5975C0024DB83 /* YYTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F58F2C8A25A5975C0024DB83 /* YYTimer.m */; };
 		F5953954257A1FA500D87FDA /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = F5953953257A1FA500D87FDA /* UIView+Toast.m */; };
 		F5B5AF98259C71530057AE11 /* AppDelegate+WeicyUM.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B5AF97259C71530057AE11 /* AppDelegate+WeicyUM.m */; };
+		F5B5B24D259EEED10057AE11 /* WQLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B5B24C259EEED10057AE11 /* WQLanguage.m */; };
+		F5B5B254259EEEDD0057AE11 /* LocalConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B5B253259EEEDD0057AE11 /* LocalConnection.m */; };
 		F5D867D52575DC6300A251B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D867D42575DC6300A251B5 /* AppDelegate.m */; };
 		F5D867DB2575DC6300A251B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D867DA2575DC6300A251B5 /* ViewController.m */; };
 		F5D867DE2575DC6300A251B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D867DC2575DC6300A251B5 /* Main.storyboard */; };
@@ -40,6 +44,7 @@
 		F5D8694725772FD000A251B5 /* UIView+WeicyCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8694625772FD000A251B5 /* UIView+WeicyCorners.m */; };
 		F5D8694D2577398000A251B5 /* UIControl+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8694C2577398000A251B5 /* UIControl+WeicyCommon.m */; };
 		F5D8697525776CCD00A251B5 /* UIView+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8697425776CCD00A251B5 /* UIView+WeicyCommon.m */; };
+		F5E90BF025AE993400064D1F /* UITableView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E90BEE25AE993400064D1F /* UITableView+YYAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +77,8 @@
 		F52418562583204E003713B8 /* NSData+WeicyCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+WeicyCommon.m"; sourceTree = "<group>"; };
 		F554012025876CF500284586 /* UIGestureRecognizer+WeicyCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+WeicyCommon.h"; sourceTree = "<group>"; };
 		F554012125876CF500284586 /* UIGestureRecognizer+WeicyCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+WeicyCommon.m"; sourceTree = "<group>"; };
+		F569FA7D25A2F874000835DE /* UIViewController+ImagePickerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ImagePickerManager.m"; sourceTree = "<group>"; };
+		F569FA7E25A2F874000835DE /* UIViewController+ImagePickerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ImagePickerManager.h"; sourceTree = "<group>"; };
 		F572D1EA2591A23300594AE3 /* UILabel+WeicyCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+WeicyCommon.h"; sourceTree = "<group>"; };
 		F572D1EB2591A23300594AE3 /* UILabel+WeicyCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+WeicyCommon.m"; sourceTree = "<group>"; };
 		F572D2CC2593257800594AE3 /* UIControl+WeicyAddForCombo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+WeicyAddForCombo.h"; sourceTree = "<group>"; };
@@ -79,12 +86,18 @@
 		F572D33025942BB000594AE3 /* WeicyCommonMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeicyCommonMacros.h; sourceTree = "<group>"; };
 		F572D3B42595831000594AE3 /* AppDelegate+WeicyGT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+WeicyGT.m"; sourceTree = "<group>"; };
 		F572D3B52595831000594AE3 /* AppDelegate+WeicyGT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+WeicyGT.h"; sourceTree = "<group>"; };
+		F58F2C8925A5975C0024DB83 /* YYTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTimer.h; sourceTree = "<group>"; };
+		F58F2C8A25A5975C0024DB83 /* YYTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTimer.m; sourceTree = "<group>"; };
 		F5953952257A1FA500D87FDA /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
 		F5953953257A1FA500D87FDA /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		F5B5AF88259C614A0057AE11 /* WeicyMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeicyMacro.h; sourceTree = "<group>"; };
 		F5B5AF8C259C61BD0057AE11 /* WeicyCommonGCDMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeicyCommonGCDMacro.h; sourceTree = "<group>"; };
 		F5B5AF96259C71530057AE11 /* AppDelegate+WeicyUM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+WeicyUM.h"; sourceTree = "<group>"; };
 		F5B5AF97259C71530057AE11 /* AppDelegate+WeicyUM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+WeicyUM.m"; sourceTree = "<group>"; };
+		F5B5B24B259EEED10057AE11 /* WQLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQLanguage.h; sourceTree = "<group>"; };
+		F5B5B24C259EEED10057AE11 /* WQLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQLanguage.m; sourceTree = "<group>"; };
+		F5B5B252259EEEDD0057AE11 /* LocalConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalConnection.h; sourceTree = "<group>"; };
+		F5B5B253259EEEDD0057AE11 /* LocalConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalConnection.m; sourceTree = "<group>"; };
 		F5D867D02575DC6300A251B5 /* Common.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Common.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D867D32575DC6300A251B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F5D867D42575DC6300A251B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -132,6 +145,8 @@
 		F5D8694C2577398000A251B5 /* UIControl+WeicyCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+WeicyCommon.m"; sourceTree = "<group>"; };
 		F5D8697325776CCD00A251B5 /* UIView+WeicyCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+WeicyCommon.h"; sourceTree = "<group>"; };
 		F5D8697425776CCD00A251B5 /* UIView+WeicyCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+WeicyCommon.m"; sourceTree = "<group>"; };
+		F5E90BEE25AE993400064D1F /* UITableView+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+YYAdd.m"; sourceTree = "<group>"; };
+		F5E90BEF25AE993400064D1F /* UITableView+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+YYAdd.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,12 +225,15 @@
 		F572D2CB2593256200594AE3 /* Action */ = {
 			isa = PBXGroup;
 			children = (
-				F572D3B52595831000594AE3 /* AppDelegate+WeicyGT.h */,
-				F572D3B42595831000594AE3 /* AppDelegate+WeicyGT.m */,
-				F5B5AF96259C71530057AE11 /* AppDelegate+WeicyUM.h */,
-				F5B5AF97259C71530057AE11 /* AppDelegate+WeicyUM.m */,
-				F572D2CC2593257800594AE3 /* UIControl+WeicyAddForCombo.h */,
-				F572D2CD2593257800594AE3 /* UIControl+WeicyAddForCombo.m */,
+				F5E90BED25AE993400064D1F /* Tableview */,
+				F5E90BEB25AE98E600064D1F /* YYTimer */,
+				F5E90BEA25AE98CB00064D1F /* 友盟 */,
+				F569FA7E25A2F874000835DE /* UIViewController+ImagePickerManager.h */,
+				F569FA7D25A2F874000835DE /* UIViewController+ImagePickerManager.m */,
+				F5B5B251259EEEDD0057AE11 /* Connection */,
+				F5B5B24A259EEED10057AE11 /* Global */,
+				F5E90BE925AE98B100064D1F /* 个推 */,
+				F5E90BEC25AE990000064D1F /* 点击间隔 */,
 			);
 			path = Action;
 			sourceTree = "<group>";
@@ -228,6 +246,24 @@
 				F5B5AF88259C614A0057AE11 /* WeicyMacro.h */,
 			);
 			path = Macro;
+			sourceTree = "<group>";
+		};
+		F5B5B24A259EEED10057AE11 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				F5B5B24B259EEED10057AE11 /* WQLanguage.h */,
+				F5B5B24C259EEED10057AE11 /* WQLanguage.m */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		F5B5B251259EEEDD0057AE11 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				F5B5B252259EEEDD0057AE11 /* LocalConnection.h */,
+				F5B5B253259EEEDD0057AE11 /* LocalConnection.m */,
+			);
+			path = Connection;
 			sourceTree = "<group>";
 		};
 		F5D867C72575DC6300A251B5 = {
@@ -323,6 +359,51 @@
 				F5D868712576340400A251B5 /* WeicyAppTool.m */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		F5E90BE925AE98B100064D1F /* 个推 */ = {
+			isa = PBXGroup;
+			children = (
+				F572D3B52595831000594AE3 /* AppDelegate+WeicyGT.h */,
+				F572D3B42595831000594AE3 /* AppDelegate+WeicyGT.m */,
+			);
+			path = "个推";
+			sourceTree = "<group>";
+		};
+		F5E90BEA25AE98CB00064D1F /* 友盟 */ = {
+			isa = PBXGroup;
+			children = (
+				F5B5AF96259C71530057AE11 /* AppDelegate+WeicyUM.h */,
+				F5B5AF97259C71530057AE11 /* AppDelegate+WeicyUM.m */,
+			);
+			path = "友盟";
+			sourceTree = "<group>";
+		};
+		F5E90BEB25AE98E600064D1F /* YYTimer */ = {
+			isa = PBXGroup;
+			children = (
+				F58F2C8925A5975C0024DB83 /* YYTimer.h */,
+				F58F2C8A25A5975C0024DB83 /* YYTimer.m */,
+			);
+			path = YYTimer;
+			sourceTree = "<group>";
+		};
+		F5E90BEC25AE990000064D1F /* 点击间隔 */ = {
+			isa = PBXGroup;
+			children = (
+				F572D2CD2593257800594AE3 /* UIControl+WeicyAddForCombo.m */,
+				F572D2CC2593257800594AE3 /* UIControl+WeicyAddForCombo.h */,
+			);
+			path = "点击间隔";
+			sourceTree = "<group>";
+		};
+		F5E90BED25AE993400064D1F /* Tableview */ = {
+			isa = PBXGroup;
+			children = (
+				F5E90BEE25AE993400064D1F /* UITableView+YYAdd.m */,
+				F5E90BEF25AE993400064D1F /* UITableView+YYAdd.h */,
+			);
+			path = Tableview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -458,6 +539,7 @@
 				F5D8694725772FD000A251B5 /* UIView+WeicyCorners.m in Sources */,
 				F5D868532576138100A251B5 /* NSDictionary+WeicyCommon.m in Sources */,
 				F572D1EC2591A23300594AE3 /* UILabel+WeicyCommon.m in Sources */,
+				F569FA7F25A2F874000835DE /* UIViewController+ImagePickerManager.m in Sources */,
 				F52418572583204E003713B8 /* NSData+WeicyCommon.m in Sources */,
 				F5D8684A2575F2E500A251B5 /* WeciyEncryptStringTool.m in Sources */,
 				F5D867DB2575DC6300A251B5 /* ViewController.m in Sources */,
@@ -470,16 +552,20 @@
 				F52418262582FF55003713B8 /* UIButton+WeicyCommon.m in Sources */,
 				F5D867D52575DC6300A251B5 /* AppDelegate.m in Sources */,
 				F5D8694125772F2100A251B5 /* UIApplication+WeicyCommon.m in Sources */,
+				F5E90BF025AE993400064D1F /* UITableView+YYAdd.m in Sources */,
 				F554012225876CF500284586 /* UIGestureRecognizer+WeicyCommon.m in Sources */,
 				F5D8697525776CCD00A251B5 /* UIView+WeicyCommon.m in Sources */,
 				F572D2CE2593257800594AE3 /* UIControl+WeicyAddForCombo.m in Sources */,
 				F5D8686925762F5700A251B5 /* WeicyJumpTool.m in Sources */,
 				F5D8689E25763F8A00A251B5 /* UIColor+WeicyCommon.m in Sources */,
+				F5B5B254259EEEDD0057AE11 /* LocalConnection.m in Sources */,
+				F58F2C8B25A5975C0024DB83 /* YYTimer.m in Sources */,
 				F572D3B62595831000594AE3 /* AppDelegate+WeicyGT.m in Sources */,
 				F5B5AF98259C71530057AE11 /* AppDelegate+WeicyUM.m in Sources */,
 				F5D868412575EC7900A251B5 /* NSDate+WeicyCommon.m in Sources */,
 				F5D867E62575DC6500A251B5 /* main.m in Sources */,
 				F5D8685A2576164E00A251B5 /* WeicyGCDTimerTool.m in Sources */,
+				F5B5B24D259EEED10057AE11 /* WQLanguage.m in Sources */,
 				F524185125831DDA003713B8 /* NSString+WeicyCommon.m in Sources */,
 				F52417F92581C9DA003713B8 /* UIImage+WeicyCommon.m in Sources */,
 			);
