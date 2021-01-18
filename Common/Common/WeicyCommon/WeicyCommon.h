@@ -18,6 +18,7 @@
  TODO: 常见工具类整理
  TODO: 多语言国际化
  TODO: 仿金融app后台的蒙版
+ TODO: 添加权限工具类？？？
  
  MARK: Button 连续点击问题现在已经写好UIControl+WeicyAddForCombo 但是和block的冲突 设置无效 暂不添加进common
  */

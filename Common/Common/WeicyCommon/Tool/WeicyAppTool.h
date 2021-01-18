@@ -31,14 +31,17 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)weicy_telWithPhoneNumber:(NSString *_Nonnull)phoneNumber;
 
-#pragma mark - 打开链接 跳转safari
-
+#pragma mark - 打开链接
 /**
- 打开链接
+ 打开链接 跳转safari
 
  @param urlStr 需要用Safari打开的url
  */
 + (void)weicy_gotoSafariBrowserWithURL:(NSString *_Nonnull)urlStr;
+
+/// 打开其他app
+/// @param urlSchemes scheme
++ (void)weicy_gotoOtherAPPWithURLScheme:(NSString *_Nonnull)urlSchemes;
 
 #pragma mark - 强制让App直接退出（非闪退，非崩溃）
 /// 强制让App直接退出（非闪退，非崩溃）

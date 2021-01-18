@@ -44,6 +44,15 @@
     }];
 }
 
++ (void)weicy_gotoOtherAPPWithURLScheme:(NSString *_Nonnull)urlSchemes {
+    NSURL *tempURL = [NSURL URLWithString:urlSchemes];
+    if ([[UIApplication sharedApplication] canOpenURL:tempURL]) {
+        [[UIApplication sharedApplication] openURL:tempURL options:@{} completionHandler:^(BOOL success) {
+                
+        }];
+    }
+}
+
 #pragma mark - 强制让App直接退出（非闪退，非崩溃）
 + (void)weicy_exitApplicationDuration:(NSTimeInterval)interval animations:(void (^)(void))animations {
     [UIView animateWithDuration:interval animations:animations completion:^(BOOL finished) {

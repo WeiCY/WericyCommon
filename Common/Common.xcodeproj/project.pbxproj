@@ -17,6 +17,8 @@
 		F572D1EC2591A23300594AE3 /* UILabel+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F572D1EB2591A23300594AE3 /* UILabel+WeicyCommon.m */; };
 		F572D2CE2593257800594AE3 /* UIControl+WeicyAddForCombo.m in Sources */ = {isa = PBXBuildFile; fileRef = F572D2CD2593257800594AE3 /* UIControl+WeicyAddForCombo.m */; };
 		F572D3B62595831000594AE3 /* AppDelegate+WeicyGT.m in Sources */ = {isa = PBXBuildFile; fileRef = F572D3B42595831000594AE3 /* AppDelegate+WeicyGT.m */; };
+		F574B4AF25B049E5000ADB62 /* ZCChinaLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B4AD25B049E5000ADB62 /* ZCChinaLocation.m */; };
+		F574B50325B530B3000ADB62 /* LBSystemPhotoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B50125B530B3000ADB62 /* LBSystemPhotoPicker.m */; };
 		F58F2C8B25A5975C0024DB83 /* YYTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F58F2C8A25A5975C0024DB83 /* YYTimer.m */; };
 		F5953954257A1FA500D87FDA /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = F5953953257A1FA500D87FDA /* UIView+Toast.m */; };
 		F5B5AF98259C71530057AE11 /* AppDelegate+WeicyUM.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B5AF97259C71530057AE11 /* AppDelegate+WeicyUM.m */; };
@@ -86,6 +88,10 @@
 		F572D33025942BB000594AE3 /* WeicyCommonMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeicyCommonMacros.h; sourceTree = "<group>"; };
 		F572D3B42595831000594AE3 /* AppDelegate+WeicyGT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+WeicyGT.m"; sourceTree = "<group>"; };
 		F572D3B52595831000594AE3 /* AppDelegate+WeicyGT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+WeicyGT.h"; sourceTree = "<group>"; };
+		F574B4AD25B049E5000ADB62 /* ZCChinaLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCChinaLocation.m; sourceTree = "<group>"; };
+		F574B4AE25B049E5000ADB62 /* ZCChinaLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCChinaLocation.h; sourceTree = "<group>"; };
+		F574B50125B530B3000ADB62 /* LBSystemPhotoPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSystemPhotoPicker.m; sourceTree = "<group>"; };
+		F574B50225B530B3000ADB62 /* LBSystemPhotoPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSystemPhotoPicker.h; sourceTree = "<group>"; };
 		F58F2C8925A5975C0024DB83 /* YYTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTimer.h; sourceTree = "<group>"; };
 		F58F2C8A25A5975C0024DB83 /* YYTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTimer.m; sourceTree = "<group>"; };
 		F5953952257A1FA500D87FDA /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
@@ -225,17 +231,37 @@
 		F572D2CB2593256200594AE3 /* Action */ = {
 			isa = PBXGroup;
 			children = (
+				F574B4AE25B049E5000ADB62 /* ZCChinaLocation.h */,
+				F574B4AD25B049E5000ADB62 /* ZCChinaLocation.m */,
 				F5E90BED25AE993400064D1F /* Tableview */,
 				F5E90BEB25AE98E600064D1F /* YYTimer */,
 				F5E90BEA25AE98CB00064D1F /* 友盟 */,
-				F569FA7E25A2F874000835DE /* UIViewController+ImagePickerManager.h */,
-				F569FA7D25A2F874000835DE /* UIViewController+ImagePickerManager.m */,
+				F574B4FF25B53080000ADB62 /* 相机相册 */,
 				F5B5B251259EEEDD0057AE11 /* Connection */,
 				F5B5B24A259EEED10057AE11 /* Global */,
 				F5E90BE925AE98B100064D1F /* 个推 */,
 				F5E90BEC25AE990000064D1F /* 点击间隔 */,
 			);
 			path = Action;
+			sourceTree = "<group>";
+		};
+		F574B4FF25B53080000ADB62 /* 相机相册 */ = {
+			isa = PBXGroup;
+			children = (
+				F574B50025B530B3000ADB62 /* LBSystemPhotoPicker */,
+				F569FA7E25A2F874000835DE /* UIViewController+ImagePickerManager.h */,
+				F569FA7D25A2F874000835DE /* UIViewController+ImagePickerManager.m */,
+			);
+			path = "相机相册";
+			sourceTree = "<group>";
+		};
+		F574B50025B530B3000ADB62 /* LBSystemPhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				F574B50125B530B3000ADB62 /* LBSystemPhotoPicker.m */,
+				F574B50225B530B3000ADB62 /* LBSystemPhotoPicker.h */,
+			);
+			path = LBSystemPhotoPicker;
 			sourceTree = "<group>";
 		};
 		F5B5AF87259C61140057AE11 /* Macro */ = {
@@ -294,6 +320,7 @@
 				F5D867D42575DC6300A251B5 /* AppDelegate.m */,
 				F5D867D92575DC6300A251B5 /* ViewController.h */,
 				F5D867DA2575DC6300A251B5 /* ViewController.m */,
+				F5E90C0E25AEC4D000064D1F /* PhotoView */,
 				F572D2CB2593256200594AE3 /* Action */,
 				F5D867DC2575DC6300A251B5 /* Main.storyboard */,
 				F5D867DF2575DC6500A251B5 /* Assets.xcassets */,
@@ -404,6 +431,13 @@
 				F5E90BEF25AE993400064D1F /* UITableView+YYAdd.h */,
 			);
 			path = Tableview;
+			sourceTree = "<group>";
+		};
+		F5E90C0E25AEC4D000064D1F /* PhotoView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PhotoView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -548,7 +582,9 @@
 				F5D8690D257646A300A251B5 /* UIDevice+WeicyCommon.m in Sources */,
 				F5953954257A1FA500D87FDA /* UIView+Toast.m in Sources */,
 				F5D868602576173F00A251B5 /* WeicyRegularExpressionTool.m in Sources */,
+				F574B4AF25B049E5000ADB62 /* ZCChinaLocation.m in Sources */,
 				F5D868722576340400A251B5 /* WeicyAppTool.m in Sources */,
+				F574B50325B530B3000ADB62 /* LBSystemPhotoPicker.m in Sources */,
 				F52418262582FF55003713B8 /* UIButton+WeicyCommon.m in Sources */,
 				F5D867D52575DC6300A251B5 /* AppDelegate.m in Sources */,
 				F5D8694125772F2100A251B5 /* UIApplication+WeicyCommon.m in Sources */,
