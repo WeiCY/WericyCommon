@@ -11,8 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 正则表达式校验
 @interface WeicyRegularExpressionTool : NSObject
-#pragma mark - 手机号码相关
-#pragma mark - 手机号校验
+
 #pragma mark - 手机号校验
 /// 是否为正确电话号码
 /// @param phoneNumber 传入需要检测的字符串
