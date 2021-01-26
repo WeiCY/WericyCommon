@@ -13,5 +13,6 @@
 #import "WeicyRegularExpressionTool.h"
 #import "WeicyJumpTool.h"
 #import "WeicyAppTool.h"
+#import "WeicyUpdateTool.h"
 
 #endif /* WeicyTool_h */
