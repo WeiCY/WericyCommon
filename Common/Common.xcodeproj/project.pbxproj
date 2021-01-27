@@ -35,6 +35,7 @@
 		F5A17E2B25BFB04E00848FC5 /* WeicyUpdateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A17E2A25BFB04E00848FC5 /* WeicyUpdateTool.m */; };
 		F5A17E3F25BFE79800848FC5 /* WeicyFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A17E3E25BFE79800848FC5 /* WeicyFileTool.m */; };
 		F5A17E4825C1122A00848FC5 /* UINavigationItem+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A17E4725C1122A00848FC5 /* UINavigationItem+WeicyCommon.m */; };
+		F5A17E6225C13F5900848FC5 /* AppDelegate+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A17E6125C13F5900848FC5 /* AppDelegate+WeicyCommon.m */; };
 		F5B5AF98259C71530057AE11 /* AppDelegate+WeicyUM.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B5AF97259C71530057AE11 /* AppDelegate+WeicyUM.m */; };
 		F5B5B24D259EEED10057AE11 /* WQLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B5B24C259EEED10057AE11 /* WQLanguage.m */; };
 		F5D867D52575DC6300A251B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D867D42575DC6300A251B5 /* AppDelegate.m */; };
@@ -137,6 +138,8 @@
 		F5A17E3E25BFE79800848FC5 /* WeicyFileTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeicyFileTool.m; sourceTree = "<group>"; };
 		F5A17E4625C1122A00848FC5 /* UINavigationItem+WeicyCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+WeicyCommon.h"; sourceTree = "<group>"; };
 		F5A17E4725C1122A00848FC5 /* UINavigationItem+WeicyCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+WeicyCommon.m"; sourceTree = "<group>"; };
+		F5A17E6025C13F5900848FC5 /* AppDelegate+WeicyCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+WeicyCommon.h"; sourceTree = "<group>"; };
+		F5A17E6125C13F5900848FC5 /* AppDelegate+WeicyCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+WeicyCommon.m"; sourceTree = "<group>"; };
 		F5B5AF88259C614A0057AE11 /* WeicyMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeicyMacro.h; sourceTree = "<group>"; };
 		F5B5AF8C259C61BD0057AE11 /* WeicyCommonGCDMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeicyCommonGCDMacro.h; sourceTree = "<group>"; };
 		F5B5AF96259C71530057AE11 /* AppDelegate+WeicyUM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+WeicyUM.h"; sourceTree = "<group>"; };
@@ -373,12 +376,22 @@
 		F5A17E5525C113D600848FC5 /* 未添加category */ = {
 			isa = PBXGroup;
 			children = (
+				F5A17E5F25C13F2A00848FC5 /* 后台毛玻璃 */,
 				F5E90BEA25AE98CB00064D1F /* 友盟 */,
 				F5E90BEC25AE990000064D1F /* 点击间隔 */,
 				F5E90BE925AE98B100064D1F /* 个推 */,
 				F5A17E4525C1120800848FC5 /* 导航栏 */,
 			);
 			path = "未添加category";
+			sourceTree = "<group>";
+		};
+		F5A17E5F25C13F2A00848FC5 /* 后台毛玻璃 */ = {
+			isa = PBXGroup;
+			children = (
+				F5A17E6025C13F5900848FC5 /* AppDelegate+WeicyCommon.h */,
+				F5A17E6125C13F5900848FC5 /* AppDelegate+WeicyCommon.m */,
+			);
+			path = "后台毛玻璃";
 			sourceTree = "<group>";
 		};
 		F5B5AF87259C61140057AE11 /* Macro */ = {
@@ -676,6 +689,7 @@
 			files = (
 				F574B60A25B5904B000ADB62 /* UITextView+PlaceHolder_yf.m in Sources */,
 				F5D8681D2575DE0700A251B5 /* NSArray+WeicyCommon.m in Sources */,
+				F5A17E6225C13F5900848FC5 /* AppDelegate+WeicyCommon.m in Sources */,
 				F5D8694725772FD000A251B5 /* UIView+WeicyCorners.m in Sources */,
 				F5D868532576138100A251B5 /* NSDictionary+WeicyCommon.m in Sources */,
 				F572D1EC2591A23300594AE3 /* UILabel+WeicyCommon.m in Sources */,

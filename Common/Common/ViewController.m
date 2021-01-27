@@ -20,6 +20,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = UIColor.redColor;
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.backgroundColor = [UIColor blueColor];
+    
+    button.frame = CGRectMake(100, 100, 100, 100);
+    [self.view addSubview:button];
+    
     // Do any additional setup after loading the view.
 }
 
