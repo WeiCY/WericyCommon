@@ -14,5 +14,6 @@
 #import "WeicyJumpTool.h"
 #import "WeicyAppTool.h"
 #import "WeicyUpdateTool.h"
+#import "WeicyFileTool.h"
 
 #endif /* WeicyTool_h */

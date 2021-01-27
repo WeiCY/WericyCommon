@@ -15,9 +15,9 @@ typedef enum : NSUInteger {
     WeicyUpdateToolCodeFailNetwork,
 } WeicyUpdateToolCode;
 
+/// 使用原生请求+APP Store接口进行更新判断
 @interface WeicyUpdateTool : NSObject
 
-/* 初始化方法 */
 + (void)weicy_updateWithAppId:(NSString *)appId successBlock:(void (^)(NSDictionary *dictionary))success failBlock:(void(^)(NSError *error))fail;
 
 @end

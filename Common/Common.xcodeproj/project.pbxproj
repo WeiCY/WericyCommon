@@ -12,6 +12,9 @@
 		F52418262582FF55003713B8 /* UIButton+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F52418252582FF55003713B8 /* UIButton+WeicyCommon.m */; };
 		F524185125831DDA003713B8 /* NSString+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F524185025831DDA003713B8 /* NSString+WeicyCommon.m */; };
 		F52418572583204E003713B8 /* NSData+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F52418562583204E003713B8 /* NSData+WeicyCommon.m */; };
+		F53E437C25B82B0500D35FC8 /* YFFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F53E437A25B82B0500D35FC8 /* YFFileManager.m */; };
+		F53E438325B82B2800D35FC8 /* YFLocationConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = F53E438125B82B2800D35FC8 /* YFLocationConverter.m */; };
+		F53E43A425B82D5F00D35FC8 /* WeicyLocationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F53E43A325B82D5F00D35FC8 /* WeicyLocationTool.m */; };
 		F554012225876CF500284586 /* UIGestureRecognizer+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F554012125876CF500284586 /* UIGestureRecognizer+WeicyCommon.m */; };
 		F569FA7F25A2F874000835DE /* UIViewController+ImagePickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F569FA7D25A2F874000835DE /* UIViewController+ImagePickerManager.m */; };
 		F572D1EC2591A23300594AE3 /* UILabel+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F572D1EB2591A23300594AE3 /* UILabel+WeicyCommon.m */; };
@@ -19,21 +22,21 @@
 		F572D3B62595831000594AE3 /* AppDelegate+WeicyGT.m in Sources */ = {isa = PBXBuildFile; fileRef = F572D3B42595831000594AE3 /* AppDelegate+WeicyGT.m */; };
 		F574B4AF25B049E5000ADB62 /* ZCChinaLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B4AD25B049E5000ADB62 /* ZCChinaLocation.m */; };
 		F574B50325B530B3000ADB62 /* LBSystemPhotoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B50125B530B3000ADB62 /* LBSystemPhotoPicker.m */; };
-		F574B59E25B576C2000ADB62 /* UIView+Visuals_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B59425B576C2000ADB62 /* UIView+Visuals_yf.m */; };
 		F574B59F25B576C2000ADB62 /* UIView+CustomBorder_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B59725B576C2000ADB62 /* UIView+CustomBorder_yf.m */; };
 		F574B5A025B576C2000ADB62 /* UIView+Shake_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B59825B576C2000ADB62 /* UIView+Shake_yf.m */; };
 		F574B5A125B576C2000ADB62 /* UIView+draggable_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B59A25B576C2000ADB62 /* UIView+draggable_yf.m */; };
 		F574B5A225B576C2000ADB62 /* UIView+Animation_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B59B25B576C2000ADB62 /* UIView+Animation_yf.m */; };
 		F574B5AC25B577BD000ADB62 /* UITextField+Shake_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B5AB25B577BD000ADB62 /* UITextField+Shake_yf.m */; };
 		F574B5E925B586CA000ADB62 /* UITextField+Extension_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B5E725B586CA000ADB62 /* UITextField+Extension_yf.m */; };
-		F574B60025B58FB7000ADB62 /* UINavigationItem+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B5FE25B58FB7000ADB62 /* UINavigationItem+Loading.m */; };
 		F574B60A25B5904B000ADB62 /* UITextView+PlaceHolder_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B60725B5904B000ADB62 /* UITextView+PlaceHolder_yf.m */; };
 		F574B60B25B5904B000ADB62 /* UITextView+Select_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B60825B5904B000ADB62 /* UITextView+Select_yf.m */; };
 		F58F2C8B25A5975C0024DB83 /* YYTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F58F2C8A25A5975C0024DB83 /* YYTimer.m */; };
 		F5953954257A1FA500D87FDA /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = F5953953257A1FA500D87FDA /* UIView+Toast.m */; };
+		F5A17E2B25BFB04E00848FC5 /* WeicyUpdateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A17E2A25BFB04E00848FC5 /* WeicyUpdateTool.m */; };
+		F5A17E3F25BFE79800848FC5 /* WeicyFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A17E3E25BFE79800848FC5 /* WeicyFileTool.m */; };
+		F5A17E4825C1122A00848FC5 /* UINavigationItem+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A17E4725C1122A00848FC5 /* UINavigationItem+WeicyCommon.m */; };
 		F5B5AF98259C71530057AE11 /* AppDelegate+WeicyUM.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B5AF97259C71530057AE11 /* AppDelegate+WeicyUM.m */; };
 		F5B5B24D259EEED10057AE11 /* WQLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B5B24C259EEED10057AE11 /* WQLanguage.m */; };
-		F5B5B254259EEEDD0057AE11 /* LocalConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B5B253259EEEDD0057AE11 /* LocalConnection.m */; };
 		F5D867D52575DC6300A251B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D867D42575DC6300A251B5 /* AppDelegate.m */; };
 		F5D867DB2575DC6300A251B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D867DA2575DC6300A251B5 /* ViewController.m */; };
 		F5D867DE2575DC6300A251B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D867DC2575DC6300A251B5 /* Main.storyboard */; };
@@ -87,6 +90,12 @@
 		F524185025831DDA003713B8 /* NSString+WeicyCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WeicyCommon.m"; sourceTree = "<group>"; };
 		F52418552583204E003713B8 /* NSData+WeicyCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+WeicyCommon.h"; sourceTree = "<group>"; };
 		F52418562583204E003713B8 /* NSData+WeicyCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+WeicyCommon.m"; sourceTree = "<group>"; };
+		F53E437A25B82B0500D35FC8 /* YFFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFFileManager.m; sourceTree = "<group>"; };
+		F53E437B25B82B0500D35FC8 /* YFFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFFileManager.h; sourceTree = "<group>"; };
+		F53E438125B82B2800D35FC8 /* YFLocationConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFLocationConverter.m; sourceTree = "<group>"; };
+		F53E438225B82B2800D35FC8 /* YFLocationConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLocationConverter.h; sourceTree = "<group>"; };
+		F53E43A225B82D5F00D35FC8 /* WeicyLocationTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeicyLocationTool.h; sourceTree = "<group>"; };
+		F53E43A325B82D5F00D35FC8 /* WeicyLocationTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeicyLocationTool.m; sourceTree = "<group>"; };
 		F554012025876CF500284586 /* UIGestureRecognizer+WeicyCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+WeicyCommon.h"; sourceTree = "<group>"; };
 		F554012125876CF500284586 /* UIGestureRecognizer+WeicyCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+WeicyCommon.m"; sourceTree = "<group>"; };
 		F569FA7D25A2F874000835DE /* UIViewController+ImagePickerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ImagePickerManager.m"; sourceTree = "<group>"; };
@@ -102,12 +111,10 @@
 		F574B4AE25B049E5000ADB62 /* ZCChinaLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCChinaLocation.h; sourceTree = "<group>"; };
 		F574B50125B530B3000ADB62 /* LBSystemPhotoPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSystemPhotoPicker.m; sourceTree = "<group>"; };
 		F574B50225B530B3000ADB62 /* LBSystemPhotoPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSystemPhotoPicker.h; sourceTree = "<group>"; };
-		F574B59425B576C2000ADB62 /* UIView+Visuals_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Visuals_yf.m"; sourceTree = "<group>"; };
 		F574B59525B576C2000ADB62 /* UIView+draggable_yf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+draggable_yf.h"; sourceTree = "<group>"; };
 		F574B59625B576C2000ADB62 /* UIView+Animation_yf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation_yf.h"; sourceTree = "<group>"; };
 		F574B59725B576C2000ADB62 /* UIView+CustomBorder_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CustomBorder_yf.m"; sourceTree = "<group>"; };
 		F574B59825B576C2000ADB62 /* UIView+Shake_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shake_yf.m"; sourceTree = "<group>"; };
-		F574B59925B576C2000ADB62 /* UIView+Visuals_yf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Visuals_yf.h"; sourceTree = "<group>"; };
 		F574B59A25B576C2000ADB62 /* UIView+draggable_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+draggable_yf.m"; sourceTree = "<group>"; };
 		F574B59B25B576C2000ADB62 /* UIView+Animation_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation_yf.m"; sourceTree = "<group>"; };
 		F574B59C25B576C2000ADB62 /* UIView+Shake_yf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Shake_yf.h"; sourceTree = "<group>"; };
@@ -116,8 +123,6 @@
 		F574B5AB25B577BD000ADB62 /* UITextField+Shake_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Shake_yf.m"; sourceTree = "<group>"; };
 		F574B5E725B586CA000ADB62 /* UITextField+Extension_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Extension_yf.m"; sourceTree = "<group>"; };
 		F574B5E825B586CA000ADB62 /* UITextField+Extension_yf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Extension_yf.h"; sourceTree = "<group>"; };
-		F574B5FE25B58FB7000ADB62 /* UINavigationItem+Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+Loading.m"; sourceTree = "<group>"; };
-		F574B5FF25B58FB7000ADB62 /* UINavigationItem+Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+Loading.h"; sourceTree = "<group>"; };
 		F574B60625B5904B000ADB62 /* UITextView+PlaceHolder_yf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+PlaceHolder_yf.h"; sourceTree = "<group>"; };
 		F574B60725B5904B000ADB62 /* UITextView+PlaceHolder_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+PlaceHolder_yf.m"; sourceTree = "<group>"; };
 		F574B60825B5904B000ADB62 /* UITextView+Select_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Select_yf.m"; sourceTree = "<group>"; };
@@ -126,14 +131,18 @@
 		F58F2C8A25A5975C0024DB83 /* YYTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTimer.m; sourceTree = "<group>"; };
 		F5953952257A1FA500D87FDA /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
 		F5953953257A1FA500D87FDA /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		F5A17E2925BFB04E00848FC5 /* WeicyUpdateTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeicyUpdateTool.h; sourceTree = "<group>"; };
+		F5A17E2A25BFB04E00848FC5 /* WeicyUpdateTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeicyUpdateTool.m; sourceTree = "<group>"; };
+		F5A17E3D25BFE79800848FC5 /* WeicyFileTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeicyFileTool.h; sourceTree = "<group>"; };
+		F5A17E3E25BFE79800848FC5 /* WeicyFileTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeicyFileTool.m; sourceTree = "<group>"; };
+		F5A17E4625C1122A00848FC5 /* UINavigationItem+WeicyCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+WeicyCommon.h"; sourceTree = "<group>"; };
+		F5A17E4725C1122A00848FC5 /* UINavigationItem+WeicyCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+WeicyCommon.m"; sourceTree = "<group>"; };
 		F5B5AF88259C614A0057AE11 /* WeicyMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeicyMacro.h; sourceTree = "<group>"; };
 		F5B5AF8C259C61BD0057AE11 /* WeicyCommonGCDMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeicyCommonGCDMacro.h; sourceTree = "<group>"; };
 		F5B5AF96259C71530057AE11 /* AppDelegate+WeicyUM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+WeicyUM.h"; sourceTree = "<group>"; };
 		F5B5AF97259C71530057AE11 /* AppDelegate+WeicyUM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+WeicyUM.m"; sourceTree = "<group>"; };
 		F5B5B24B259EEED10057AE11 /* WQLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQLanguage.h; sourceTree = "<group>"; };
 		F5B5B24C259EEED10057AE11 /* WQLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQLanguage.m; sourceTree = "<group>"; };
-		F5B5B252259EEEDD0057AE11 /* LocalConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalConnection.h; sourceTree = "<group>"; };
-		F5B5B253259EEEDD0057AE11 /* LocalConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalConnection.m; sourceTree = "<group>"; };
 		F5D867D02575DC6300A251B5 /* Common.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Common.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D867D32575DC6300A251B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F5D867D42575DC6300A251B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -258,23 +267,47 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
+		F53E437925B82B0500D35FC8 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				F53E437A25B82B0500D35FC8 /* YFFileManager.m */,
+				F53E437B25B82B0500D35FC8 /* YFFileManager.h */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		F53E438025B82B2800D35FC8 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				F53E438125B82B2800D35FC8 /* YFLocationConverter.m */,
+				F53E438225B82B2800D35FC8 /* YFLocationConverter.h */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		F53E43A125B82D3500D35FC8 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				F53E43A225B82D5F00D35FC8 /* WeicyLocationTool.h */,
+				F53E43A325B82D5F00D35FC8 /* WeicyLocationTool.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
 		F572D2CB2593256200594AE3 /* Action */ = {
 			isa = PBXGroup;
 			children = (
-				F574B5FF25B58FB7000ADB62 /* UINavigationItem+Loading.h */,
-				F574B5FE25B58FB7000ADB62 /* UINavigationItem+Loading.m */,
+				F53E43A125B82D3500D35FC8 /* Location */,
+				F53E438025B82B2800D35FC8 /* Map */,
+				F53E437925B82B0500D35FC8 /* File */,
 				F574B5E625B586B0000ADB62 /* UIText */,
 				F574B59325B576C2000ADB62 /* UIView */,
 				F574B4AE25B049E5000ADB62 /* ZCChinaLocation.h */,
 				F574B4AD25B049E5000ADB62 /* ZCChinaLocation.m */,
 				F5E90BED25AE993400064D1F /* Tableview */,
 				F5E90BEB25AE98E600064D1F /* YYTimer */,
-				F5E90BEA25AE98CB00064D1F /* 友盟 */,
 				F574B4FF25B53080000ADB62 /* 相机相册 */,
-				F5B5B251259EEEDD0057AE11 /* Connection */,
 				F5B5B24A259EEED10057AE11 /* Global */,
-				F5E90BE925AE98B100064D1F /* 个推 */,
-				F5E90BEC25AE990000064D1F /* 点击间隔 */,
 			);
 			path = Action;
 			sourceTree = "<group>";
@@ -301,16 +334,14 @@
 		F574B59325B576C2000ADB62 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				F574B59425B576C2000ADB62 /* UIView+Visuals_yf.m */,
-				F574B59525B576C2000ADB62 /* UIView+draggable_yf.h */,
 				F574B59625B576C2000ADB62 /* UIView+Animation_yf.h */,
-				F574B59725B576C2000ADB62 /* UIView+CustomBorder_yf.m */,
-				F574B59825B576C2000ADB62 /* UIView+Shake_yf.m */,
-				F574B59925B576C2000ADB62 /* UIView+Visuals_yf.h */,
-				F574B59A25B576C2000ADB62 /* UIView+draggable_yf.m */,
 				F574B59B25B576C2000ADB62 /* UIView+Animation_yf.m */,
-				F574B59C25B576C2000ADB62 /* UIView+Shake_yf.h */,
 				F574B59D25B576C2000ADB62 /* UIView+CustomBorder_yf.h */,
+				F574B59725B576C2000ADB62 /* UIView+CustomBorder_yf.m */,
+				F574B59525B576C2000ADB62 /* UIView+draggable_yf.h */,
+				F574B59A25B576C2000ADB62 /* UIView+draggable_yf.m */,
+				F574B59C25B576C2000ADB62 /* UIView+Shake_yf.h */,
+				F574B59825B576C2000ADB62 /* UIView+Shake_yf.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -330,6 +361,26 @@
 			path = UIText;
 			sourceTree = "<group>";
 		};
+		F5A17E4525C1120800848FC5 /* 导航栏 */ = {
+			isa = PBXGroup;
+			children = (
+				F5A17E4625C1122A00848FC5 /* UINavigationItem+WeicyCommon.h */,
+				F5A17E4725C1122A00848FC5 /* UINavigationItem+WeicyCommon.m */,
+			);
+			path = "导航栏";
+			sourceTree = "<group>";
+		};
+		F5A17E5525C113D600848FC5 /* 未添加category */ = {
+			isa = PBXGroup;
+			children = (
+				F5E90BEA25AE98CB00064D1F /* 友盟 */,
+				F5E90BEC25AE990000064D1F /* 点击间隔 */,
+				F5E90BE925AE98B100064D1F /* 个推 */,
+				F5A17E4525C1120800848FC5 /* 导航栏 */,
+			);
+			path = "未添加category";
+			sourceTree = "<group>";
+		};
 		F5B5AF87259C61140057AE11 /* Macro */ = {
 			isa = PBXGroup;
 			children = (
@@ -347,15 +398,6 @@
 				F5B5B24C259EEED10057AE11 /* WQLanguage.m */,
 			);
 			path = Global;
-			sourceTree = "<group>";
-		};
-		F5B5B251259EEEDD0057AE11 /* Connection */ = {
-			isa = PBXGroup;
-			children = (
-				F5B5B252259EEEDD0057AE11 /* LocalConnection.h */,
-				F5B5B253259EEEDD0057AE11 /* LocalConnection.m */,
-			);
-			path = Connection;
 			sourceTree = "<group>";
 		};
 		F5D867C72575DC6300A251B5 = {
@@ -386,7 +428,7 @@
 				F5D867D42575DC6300A251B5 /* AppDelegate.m */,
 				F5D867D92575DC6300A251B5 /* ViewController.h */,
 				F5D867DA2575DC6300A251B5 /* ViewController.m */,
-				F5E90C0E25AEC4D000064D1F /* PhotoView */,
+				F5A17E5525C113D600848FC5 /* 未添加category */,
 				F572D2CB2593256200594AE3 /* Action */,
 				F5D867DC2575DC6300A251B5 /* Main.storyboard */,
 				F5D867DF2575DC6500A251B5 /* Assets.xcassets */,
@@ -450,6 +492,10 @@
 				F5D8686825762F5700A251B5 /* WeicyJumpTool.m */,
 				F5D868702576340400A251B5 /* WeicyAppTool.h */,
 				F5D868712576340400A251B5 /* WeicyAppTool.m */,
+				F5A17E2925BFB04E00848FC5 /* WeicyUpdateTool.h */,
+				F5A17E2A25BFB04E00848FC5 /* WeicyUpdateTool.m */,
+				F5A17E3D25BFE79800848FC5 /* WeicyFileTool.h */,
+				F5A17E3E25BFE79800848FC5 /* WeicyFileTool.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -497,13 +543,6 @@
 				F5E90BEF25AE993400064D1F /* UITableView+YYAdd.h */,
 			);
 			path = Tableview;
-			sourceTree = "<group>";
-		};
-		F5E90C0E25AEC4D000064D1F /* PhotoView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PhotoView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -639,9 +678,11 @@
 				F5D8681D2575DE0700A251B5 /* NSArray+WeicyCommon.m in Sources */,
 				F5D8694725772FD000A251B5 /* UIView+WeicyCorners.m in Sources */,
 				F5D868532576138100A251B5 /* NSDictionary+WeicyCommon.m in Sources */,
-				F574B59E25B576C2000ADB62 /* UIView+Visuals_yf.m in Sources */,
 				F572D1EC2591A23300594AE3 /* UILabel+WeicyCommon.m in Sources */,
+				F53E43A425B82D5F00D35FC8 /* WeicyLocationTool.m in Sources */,
+				F53E437C25B82B0500D35FC8 /* YFFileManager.m in Sources */,
 				F569FA7F25A2F874000835DE /* UIViewController+ImagePickerManager.m in Sources */,
+				F5A17E4825C1122A00848FC5 /* UINavigationItem+WeicyCommon.m in Sources */,
 				F52418572583204E003713B8 /* NSData+WeicyCommon.m in Sources */,
 				F5D8684A2575F2E500A251B5 /* WeciyEncryptStringTool.m in Sources */,
 				F5D867DB2575DC6300A251B5 /* ViewController.m in Sources */,
@@ -649,7 +690,6 @@
 				F574B60B25B5904B000ADB62 /* UITextView+Select_yf.m in Sources */,
 				F524180B25820761003713B8 /* UIScrollView+WeicyCommon.m in Sources */,
 				F5D8690D257646A300A251B5 /* UIDevice+WeicyCommon.m in Sources */,
-				F574B60025B58FB7000ADB62 /* UINavigationItem+Loading.m in Sources */,
 				F5953954257A1FA500D87FDA /* UIView+Toast.m in Sources */,
 				F5D868602576173F00A251B5 /* WeicyRegularExpressionTool.m in Sources */,
 				F574B4AF25B049E5000ADB62 /* ZCChinaLocation.m in Sources */,
@@ -666,16 +706,18 @@
 				F5D8697525776CCD00A251B5 /* UIView+WeicyCommon.m in Sources */,
 				F572D2CE2593257800594AE3 /* UIControl+WeicyAddForCombo.m in Sources */,
 				F574B5A225B576C2000ADB62 /* UIView+Animation_yf.m in Sources */,
+				F5A17E2B25BFB04E00848FC5 /* WeicyUpdateTool.m in Sources */,
 				F5D8686925762F5700A251B5 /* WeicyJumpTool.m in Sources */,
 				F5D8689E25763F8A00A251B5 /* UIColor+WeicyCommon.m in Sources */,
-				F5B5B254259EEEDD0057AE11 /* LocalConnection.m in Sources */,
 				F58F2C8B25A5975C0024DB83 /* YYTimer.m in Sources */,
 				F572D3B62595831000594AE3 /* AppDelegate+WeicyGT.m in Sources */,
 				F574B5AC25B577BD000ADB62 /* UITextField+Shake_yf.m in Sources */,
+				F53E438325B82B2800D35FC8 /* YFLocationConverter.m in Sources */,
 				F5B5AF98259C71530057AE11 /* AppDelegate+WeicyUM.m in Sources */,
 				F5D868412575EC7900A251B5 /* NSDate+WeicyCommon.m in Sources */,
 				F5D867E62575DC6500A251B5 /* main.m in Sources */,
 				F5D8685A2576164E00A251B5 /* WeicyGCDTimerTool.m in Sources */,
+				F5A17E3F25BFE79800848FC5 /* WeicyFileTool.m in Sources */,
 				F5B5B24D259EEED10057AE11 /* WQLanguage.m in Sources */,
 				F524185125831DDA003713B8 /* NSString+WeicyCommon.m in Sources */,
 				F52417F92581C9DA003713B8 /* UIImage+WeicyCommon.m in Sources */,

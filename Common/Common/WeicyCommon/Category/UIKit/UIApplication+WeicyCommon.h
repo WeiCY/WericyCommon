@@ -11,6 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIApplication (WeicyCommon)
 
+/// 主目录路径
+@property (nonatomic, readonly) NSString * _Nonnull homePath;
+
 /// “文档”文件夹  在这个应用的沙箱里。
 @property (nonatomic, readonly) NSURL * _Nonnull documentsURL;
 @property (nonatomic, readonly) NSString * _Nonnull documentsPath;

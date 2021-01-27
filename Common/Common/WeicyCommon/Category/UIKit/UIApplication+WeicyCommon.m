@@ -12,6 +12,10 @@
 
 @implementation UIApplication (WeicyCommon)
 
+- (NSString *)homePath {
+    return NSHomeDirectory();
+}
+
 - (NSURL *)documentsURL {
     return [[[NSFileManager defaultManager]
              URLsForDirectory:NSDocumentDirectory
