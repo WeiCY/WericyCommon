@@ -9,9 +9,11 @@
 
 #import "WeicyCommon/WeicyCommon.h"
 
+#import "UIView+Animation_yf.h"
+
 @interface ViewController ()
 
-@property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong) UIButton *btn;
 @property (nonatomic, assign) NSInteger *index;
 
 @end
@@ -28,8 +30,14 @@
     
     button.frame = CGRectMake(100, 100, 100, 100);
     [self.view addSubview:button];
+    self.btn = button;
     
     // Do any additional setup after loading the view.
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//    [self.btn moveTo:CGPointMake(100, 300) duration:2 option:UIViewAnimationOptionBeginFromCurrentState];
+    [self.btn curlDown:0.3];
 }
 
 @end

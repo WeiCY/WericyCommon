@@ -19,7 +19,6 @@
 #import "UIColor+WeicyCommon.h"
 #import "UIDevice+WeicyCommon.h"
 #import "UIApplication+WeicyCommon.h"
-#import "UIView+WeicyCorners.h"
 #import "UIControl+WeicyCommon.h"
 #import "UIView+WeicyCommon.h"
 #import "UIView+Toast.h"

@@ -23,10 +23,8 @@
 		F574B4AF25B049E5000ADB62 /* ZCChinaLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B4AD25B049E5000ADB62 /* ZCChinaLocation.m */; };
 		F574B50325B530B3000ADB62 /* LBSystemPhotoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B50125B530B3000ADB62 /* LBSystemPhotoPicker.m */; };
 		F574B59F25B576C2000ADB62 /* UIView+CustomBorder_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B59725B576C2000ADB62 /* UIView+CustomBorder_yf.m */; };
-		F574B5A025B576C2000ADB62 /* UIView+Shake_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B59825B576C2000ADB62 /* UIView+Shake_yf.m */; };
 		F574B5A125B576C2000ADB62 /* UIView+draggable_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B59A25B576C2000ADB62 /* UIView+draggable_yf.m */; };
 		F574B5A225B576C2000ADB62 /* UIView+Animation_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B59B25B576C2000ADB62 /* UIView+Animation_yf.m */; };
-		F574B5AC25B577BD000ADB62 /* UITextField+Shake_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B5AB25B577BD000ADB62 /* UITextField+Shake_yf.m */; };
 		F574B5E925B586CA000ADB62 /* UITextField+Extension_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B5E725B586CA000ADB62 /* UITextField+Extension_yf.m */; };
 		F574B60A25B5904B000ADB62 /* UITextView+PlaceHolder_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B60725B5904B000ADB62 /* UITextView+PlaceHolder_yf.m */; };
 		F574B60B25B5904B000ADB62 /* UITextView+Select_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B60825B5904B000ADB62 /* UITextView+Select_yf.m */; };
@@ -57,7 +55,6 @@
 		F5D8689E25763F8A00A251B5 /* UIColor+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8689D25763F8A00A251B5 /* UIColor+WeicyCommon.m */; };
 		F5D8690D257646A300A251B5 /* UIDevice+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8690C257646A300A251B5 /* UIDevice+WeicyCommon.m */; };
 		F5D8694125772F2100A251B5 /* UIApplication+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8694025772F2100A251B5 /* UIApplication+WeicyCommon.m */; };
-		F5D8694725772FD000A251B5 /* UIView+WeicyCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8694625772FD000A251B5 /* UIView+WeicyCorners.m */; };
 		F5D8694D2577398000A251B5 /* UIControl+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8694C2577398000A251B5 /* UIControl+WeicyCommon.m */; };
 		F5D8697525776CCD00A251B5 /* UIView+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8697425776CCD00A251B5 /* UIView+WeicyCommon.m */; };
 		F5E90BF025AE993400064D1F /* UITableView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E90BEE25AE993400064D1F /* UITableView+YYAdd.m */; };
@@ -115,13 +112,9 @@
 		F574B59525B576C2000ADB62 /* UIView+draggable_yf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+draggable_yf.h"; sourceTree = "<group>"; };
 		F574B59625B576C2000ADB62 /* UIView+Animation_yf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation_yf.h"; sourceTree = "<group>"; };
 		F574B59725B576C2000ADB62 /* UIView+CustomBorder_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CustomBorder_yf.m"; sourceTree = "<group>"; };
-		F574B59825B576C2000ADB62 /* UIView+Shake_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shake_yf.m"; sourceTree = "<group>"; };
 		F574B59A25B576C2000ADB62 /* UIView+draggable_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+draggable_yf.m"; sourceTree = "<group>"; };
 		F574B59B25B576C2000ADB62 /* UIView+Animation_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation_yf.m"; sourceTree = "<group>"; };
-		F574B59C25B576C2000ADB62 /* UIView+Shake_yf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Shake_yf.h"; sourceTree = "<group>"; };
 		F574B59D25B576C2000ADB62 /* UIView+CustomBorder_yf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CustomBorder_yf.h"; sourceTree = "<group>"; };
-		F574B5AA25B577BD000ADB62 /* UITextField+Shake_yf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Shake_yf.h"; sourceTree = "<group>"; };
-		F574B5AB25B577BD000ADB62 /* UITextField+Shake_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Shake_yf.m"; sourceTree = "<group>"; };
 		F574B5E725B586CA000ADB62 /* UITextField+Extension_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Extension_yf.m"; sourceTree = "<group>"; };
 		F574B5E825B586CA000ADB62 /* UITextField+Extension_yf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Extension_yf.h"; sourceTree = "<group>"; };
 		F574B60625B5904B000ADB62 /* UITextView+PlaceHolder_yf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+PlaceHolder_yf.h"; sourceTree = "<group>"; };
@@ -187,8 +180,6 @@
 		F5D8690C257646A300A251B5 /* UIDevice+WeicyCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+WeicyCommon.m"; sourceTree = "<group>"; };
 		F5D8693F25772F2100A251B5 /* UIApplication+WeicyCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+WeicyCommon.h"; sourceTree = "<group>"; };
 		F5D8694025772F2100A251B5 /* UIApplication+WeicyCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+WeicyCommon.m"; sourceTree = "<group>"; };
-		F5D8694525772FD000A251B5 /* UIView+WeicyCorners.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+WeicyCorners.h"; sourceTree = "<group>"; };
-		F5D8694625772FD000A251B5 /* UIView+WeicyCorners.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+WeicyCorners.m"; sourceTree = "<group>"; };
 		F5D8694B2577398000A251B5 /* UIControl+WeicyCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+WeicyCommon.h"; sourceTree = "<group>"; };
 		F5D8694C2577398000A251B5 /* UIControl+WeicyCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+WeicyCommon.m"; sourceTree = "<group>"; };
 		F5D8697325776CCD00A251B5 /* UIView+WeicyCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+WeicyCommon.h"; sourceTree = "<group>"; };
@@ -248,8 +239,6 @@
 				F5D8690C257646A300A251B5 /* UIDevice+WeicyCommon.m */,
 				F5D8693F25772F2100A251B5 /* UIApplication+WeicyCommon.h */,
 				F5D8694025772F2100A251B5 /* UIApplication+WeicyCommon.m */,
-				F5D8694525772FD000A251B5 /* UIView+WeicyCorners.h */,
-				F5D8694625772FD000A251B5 /* UIView+WeicyCorners.m */,
 				F5D8694B2577398000A251B5 /* UIControl+WeicyCommon.h */,
 				F5D8694C2577398000A251B5 /* UIControl+WeicyCommon.m */,
 				F5D8697325776CCD00A251B5 /* UIView+WeicyCommon.h */,
@@ -343,8 +332,6 @@
 				F574B59725B576C2000ADB62 /* UIView+CustomBorder_yf.m */,
 				F574B59525B576C2000ADB62 /* UIView+draggable_yf.h */,
 				F574B59A25B576C2000ADB62 /* UIView+draggable_yf.m */,
-				F574B59C25B576C2000ADB62 /* UIView+Shake_yf.h */,
-				F574B59825B576C2000ADB62 /* UIView+Shake_yf.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -352,14 +339,12 @@
 		F574B5E625B586B0000ADB62 /* UIText */ = {
 			isa = PBXGroup;
 			children = (
+				F574B5E825B586CA000ADB62 /* UITextField+Extension_yf.h */,
+				F574B5E725B586CA000ADB62 /* UITextField+Extension_yf.m */,
 				F574B60625B5904B000ADB62 /* UITextView+PlaceHolder_yf.h */,
 				F574B60725B5904B000ADB62 /* UITextView+PlaceHolder_yf.m */,
 				F574B60925B5904B000ADB62 /* UITextView+Select_yf.h */,
 				F574B60825B5904B000ADB62 /* UITextView+Select_yf.m */,
-				F574B5AA25B577BD000ADB62 /* UITextField+Shake_yf.h */,
-				F574B5E825B586CA000ADB62 /* UITextField+Extension_yf.h */,
-				F574B5E725B586CA000ADB62 /* UITextField+Extension_yf.m */,
-				F574B5AB25B577BD000ADB62 /* UITextField+Shake_yf.m */,
 			);
 			path = UIText;
 			sourceTree = "<group>";
@@ -690,7 +675,6 @@
 				F574B60A25B5904B000ADB62 /* UITextView+PlaceHolder_yf.m in Sources */,
 				F5D8681D2575DE0700A251B5 /* NSArray+WeicyCommon.m in Sources */,
 				F5A17E6225C13F5900848FC5 /* AppDelegate+WeicyCommon.m in Sources */,
-				F5D8694725772FD000A251B5 /* UIView+WeicyCorners.m in Sources */,
 				F5D868532576138100A251B5 /* NSDictionary+WeicyCommon.m in Sources */,
 				F572D1EC2591A23300594AE3 /* UILabel+WeicyCommon.m in Sources */,
 				F53E43A425B82D5F00D35FC8 /* WeicyLocationTool.m in Sources */,
@@ -715,7 +699,6 @@
 				F5E90BF025AE993400064D1F /* UITableView+YYAdd.m in Sources */,
 				F554012225876CF500284586 /* UIGestureRecognizer+WeicyCommon.m in Sources */,
 				F574B5E925B586CA000ADB62 /* UITextField+Extension_yf.m in Sources */,
-				F574B5A025B576C2000ADB62 /* UIView+Shake_yf.m in Sources */,
 				F574B59F25B576C2000ADB62 /* UIView+CustomBorder_yf.m in Sources */,
 				F5D8697525776CCD00A251B5 /* UIView+WeicyCommon.m in Sources */,
 				F572D2CE2593257800594AE3 /* UIControl+WeicyAddForCombo.m in Sources */,
@@ -725,7 +708,6 @@
 				F5D8689E25763F8A00A251B5 /* UIColor+WeicyCommon.m in Sources */,
 				F58F2C8B25A5975C0024DB83 /* YYTimer.m in Sources */,
 				F572D3B62595831000594AE3 /* AppDelegate+WeicyGT.m in Sources */,
-				F574B5AC25B577BD000ADB62 /* UITextField+Shake_yf.m in Sources */,
 				F53E438325B82B2800D35FC8 /* YFLocationConverter.m in Sources */,
 				F5B5AF98259C71530057AE11 /* AppDelegate+WeicyUM.m in Sources */,
 				F5D868412575EC7900A251B5 /* NSDate+WeicyCommon.m in Sources */,

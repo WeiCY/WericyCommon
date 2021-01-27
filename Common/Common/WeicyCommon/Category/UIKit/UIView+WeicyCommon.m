@@ -173,6 +173,179 @@
     return snap;
 }
 
+#pragma mark - corner
+- (void)weicy_useBezierPathClipCornerWithType:(WeicyViewCornerType)cornerType WithCornerRadius:(CGFloat)cornerRadius {
+    
+    [self makeCornerWithMaskPath:[self getBezierPathWithUILayoutCornerType:cornerType WithCornerRadius:cornerRadius]];
+}
+
+- (void)weicy_useBezierPathClipCornerWithType:(WeicyViewCornerType)cornerType WithCornerRadius:(CGFloat)cornerRadius WithBorderColor:(UIColor *)color withBorderWidth:(CGFloat)width {
+    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+    shapeLayer.frame = self.bounds;
+    shapeLayer.path = [[self getBezierPathWithUILayoutCornerType:cornerType WithCornerRadius:cornerRadius] CGPath];
+    shapeLayer.lineWidth = width;
+    shapeLayer.strokeColor = color.CGColor;
+    shapeLayer.fillColor = [UIColor clearColor].CGColor;
+    [self.layer addSublayer:shapeLayer];
+    
+    [self weicy_useBezierPathClipCornerWithType:cornerType WithCornerRadius:cornerRadius];
+}
+
+#pragma mark - 添加边框
+- (void)weicy_useCALayerMakeBorderLineWithBorderColor:(UIColor *)color borderWidth:(CGFloat)width {
+    self.layer.borderColor = color.CGColor;//设置边框颜色
+    self.layer.borderWidth = width;//设置边框颜色
+}
+
+#pragma mark - 私有处理方法
+- (UIBezierPath *)getBezierPathWithUILayoutCornerType:(WeicyViewCornerType)cornerType WithCornerRadius:(CGFloat)cornerRadius {
+    UIBezierPath *maskPath;
+    CGSize cornerSize = CGSizeMake(cornerRadius, cornerRadius);
+    
+    switch (cornerType) {
+            // 四个角全切
+        case WeicyViewCornerTypeAll:{
+            maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
+                                             byRoundingCorners:UIRectCornerAllCorners
+                                                   cornerRadii:cornerSize];
+            
+        }
+            break;
+            
+            // 三个角
+        case WeicyViewCornerTypeExceptTopLeft:{
+            maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
+                                             byRoundingCorners:(UIRectCornerTopRight|UIRectCornerBottomLeft|UIRectCornerBottomRight)
+                                                   cornerRadii:cornerSize];
+            
+        }
+            break;
+            
+        case WeicyViewCornerTypeExceptTopRight:{
+            maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
+                                             byRoundingCorners:(UIRectCornerTopLeft|UIRectCornerBottomLeft|UIRectCornerBottomRight)
+                                                   cornerRadii:cornerSize];
+            
+        }
+            break;
+            
+        case WeicyViewCornerTypeExceptBottomLeft:{
+            maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
+                                             byRoundingCorners:(UIRectCornerTopRight|UIRectCornerTopLeft|UIRectCornerBottomRight)
+                                                   cornerRadii:cornerSize];
+            
+        }
+            break;
+            
+        case WeicyViewCornerTypeExceptBottomRight:{
+            maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
+                                             byRoundingCorners:(UIRectCornerTopRight|UIRectCornerBottomLeft|UIRectCornerTopLeft)
+                                                   cornerRadii:cornerSize];
+            
+        }
+            break;
+            
+            // 两个角
+        case WeicyViewCornerTypeTop:{
+            maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
+                                             byRoundingCorners:(UIRectCornerTopLeft|UIRectCornerTopRight)
+                                                   cornerRadii:cornerSize];
+            
+        }
+            break;
+            
+        case WeicyViewCornerTypeLeft:{
+            maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
+                                             byRoundingCorners:(UIRectCornerTopLeft|UIRectCornerBottomLeft)
+                                                   cornerRadii:cornerSize];
+            
+        }
+            break;
+            
+        case WeicyViewCornerTypeRight:{
+            maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
+                                             byRoundingCorners:(UIRectCornerTopRight|UIRectCornerBottomRight)
+                                                   cornerRadii:cornerSize];
+            
+        }
+            break;
+            
+        case WeicyViewCornerTypeBottom:{
+            maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
+                                             byRoundingCorners:(UIRectCornerBottomLeft|UIRectCornerBottomRight)
+                                                   cornerRadii:cornerSize];
+            
+        }
+            break;
+            
+            // 一个角
+        case WeicyViewCornerTypeTopLeft:{
+            maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
+                                             byRoundingCorners:(UIRectCornerTopLeft)
+                                                   cornerRadii:cornerSize];
+            
+        }
+            break;
+            
+        case WeicyViewCornerTypeTopRight:{
+            maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
+                                             byRoundingCorners:(UIRectCornerTopRight)
+                                                   cornerRadii:cornerSize];
+            
+        }
+            break;
+            
+        case WeicyViewCornerTypeBottomLeft:{
+            maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
+                                             byRoundingCorners:(UIRectCornerBottomLeft)
+                                                   cornerRadii:cornerSize];
+            
+        }
+            break;
+            
+        case WeicyViewCornerTypeBottomRight:{
+            maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
+                                             byRoundingCorners:(UIRectCornerBottomRight)
+                                                   cornerRadii:cornerSize];
+            
+        }
+            break;
+            
+            // 对角线
+        case WeicyViewCornerTypeTopLeftToBottomRight:{
+            maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
+                                             byRoundingCorners:(UIRectCornerTopLeft|UIRectCornerBottomRight)
+                                                   cornerRadii:cornerSize];
+            
+        }
+            break;
+            
+        case WeicyViewCornerTypeTopRightToBottomLeft:{
+            maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
+                                             byRoundingCorners:(UIRectCornerTopRight|UIRectCornerBottomLeft)
+                                                   cornerRadii:cornerSize];
+            
+        }
+            break;
+            
+        default: {
+            
+        }
+            break;
+            
+    }
+    
+    return maskPath;
+}
+
+- (void)makeCornerWithMaskPath:(UIBezierPath *)maskPath {
+    // Create the shape layer and set its path
+    CAShapeLayer *maskLayer = [CAShapeLayer layer];
+    maskLayer.frame = self.bounds;
+    maskLayer.path = maskPath.CGPath;
+    self.layer.mask = maskLayer;
+}
+
 #pragma mark - 阴影
 /// layer 添加全部阴影
 /// @param color 阴影颜色
@@ -270,5 +443,70 @@
     return gradientLayer;
 }
 
+#pragma mark - 抖动
+- (void)weicy_shake {
+    [self weicy_shake:5 withDelta:5 speed:0.03];
+}
 
+- (void)weicy_shake:(int)times withDelta:(CGFloat)delta {
+    [self weicy_shake:times withDelta:delta completion:nil];
+}
+
+- (void)weicy_shake:(int)times withDelta:(CGFloat)delta completion:(void (^)(void))handler {
+    [self weicy_shake:times withDelta:delta speed:0.03 completion:handler];
+}
+
+- (void)weicy_shake:(int)times withDelta:(CGFloat)delta speed:(NSTimeInterval)interval {
+    [self weicy_shake:times withDelta:delta speed:interval completion:nil];
+}
+
+- (void)weicy_shake:(int)times withDelta:(CGFloat)delta speed:(NSTimeInterval)interval completion:(void (^)(void))handler {
+    [self weicy_shake:times withDelta:delta speed:interval shakeDirection:WeicyShakeDirectionHorizontal completion:handler];
+}
+
+- (void)weicy_shake:(int)times withDelta:(CGFloat)delta speed:(NSTimeInterval)interval shakeDirection:(WeicyShakeDirection)shakeDirection {
+    [self weicy_shake:times withDelta:delta speed:interval shakeDirection:shakeDirection completion:nil];
+}
+
+- (void)weicy_shake:(int)times withDelta:(CGFloat)delta speed:(NSTimeInterval)interval shakeDirection:(WeicyShakeDirection)shakeDirection completion:(void (^)(void))completion {
+    [self shake:times direction:1 currentTimes:0 withDelta:delta speed:interval shakeDirection:shakeDirection completion:completion];
+}
+
+- (void)shake:(int)times direction:(int)direction currentTimes:(int)current withDelta:(CGFloat)delta speed:(NSTimeInterval)interval shakeDirection:(WeicyShakeDirection)shakeDirection completion:(void (^)(void))completionHandler {
+    __weak UIView *weakSelf = self;
+    
+    [UIView animateWithDuration:interval animations:^{
+        switch (shakeDirection) {
+            case WeicyShakeDirectionVertical:
+                weakSelf.layer.affineTransform = CGAffineTransformMakeTranslation(0, delta * direction);
+                break;
+            case WeicyShakeDirectionRotation:
+                weakSelf.layer.affineTransform = CGAffineTransformMakeRotation(M_PI * delta / 1000.0f * direction);
+                break;
+            case WeicyShakeDirectionHorizontal:
+                weakSelf.layer.affineTransform = CGAffineTransformMakeTranslation(delta * direction, 0);
+                break;
+            default:
+                break;
+        }
+    } completion:^(BOOL finished) {
+        if(current >= times) {
+            [UIView animateWithDuration:interval animations:^{
+                weakSelf.layer.affineTransform = CGAffineTransformIdentity;
+            } completion:^(BOOL finished){
+                if (completionHandler != nil) {
+                    completionHandler();
+                }
+            }];
+            return;
+        }
+        [weakSelf shake:times
+           direction:direction * -1
+        currentTimes:current + 1
+           withDelta:delta
+               speed:interval
+      shakeDirection:shakeDirection
+          completion:completionHandler];
+    }];
+}
 @end

@@ -7,6 +7,32 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger, WeicyViewCornerType) {
+    // 全部角都切圆角
+    WeicyViewCornerTypeAll = 0,
+    // 切三个角
+    WeicyViewCornerTypeExceptTopLeft,
+    WeicyViewCornerTypeExceptTopRight,
+    WeicyViewCornerTypeExceptBottomLeft,
+    WeicyViewCornerTypeExceptBottomRight,
+    
+    // 切两个角（同一边）
+    WeicyViewCornerTypeTop,
+    WeicyViewCornerTypeLeft,
+    WeicyViewCornerTypeRight,
+    WeicyViewCornerTypeBottom,
+    
+    // 切一个角
+    WeicyViewCornerTypeTopLeft,
+    WeicyViewCornerTypeTopRight,
+    WeicyViewCornerTypeBottomLeft,
+    WeicyViewCornerTypeBottomRight,
+    
+    // 对角线
+    WeicyViewCornerTypeTopLeftToBottomRight,
+    WeicyViewCornerTypeTopRightToBottomLeft,
+};
+
 typedef enum : NSUInteger {
     WeicyShadowPathTypeLeft = 0,
     WeicyShadowPathTypeTop,
@@ -15,6 +41,15 @@ typedef enum : NSUInteger {
     WeicyShadowPathTypeNoTop,
     WeicyShadowPathTypeAll
 } WeicyShadowPathType;
+
+typedef enum : NSUInteger {
+    /** Shake left and right */
+    WeicyShakeDirectionHorizontal,
+    /** Shake up and down */
+    WeicyShakeDirectionVertical,
+    /** Shake rotation */
+    WeicyShakeDirectionRotation,
+} WeicyShakeDirection;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -74,6 +109,35 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param afterUpdates 刷新
 - (nullable UIImage *)weicy_snapshotImageAfterScreenUpdates:(BOOL)afterUpdates;
 
+#pragma mark - corner
+/**
+ 切割圆角方法
+
+ @param cornerType 切割类型
+ @param cornerRadius 切割角度
+ */
+- (void)weicy_useBezierPathClipCornerWithType:(WeicyViewCornerType)cornerType WithCornerRadius:(CGFloat)cornerRadius;
+
+/**
+ 切割圆角方法和添加边框
+
+ @param cornerType 切割类型
+ @param cornerRadius 切割角度
+ @param color 颜色 例：[UIColor BlackColor] 方法里会转成CGColor
+ @param width 宽度 例：1.0f
+ 
+ */
+- (void)weicy_useBezierPathClipCornerWithType:(WeicyViewCornerType)cornerType WithCornerRadius:(CGFloat)cornerRadius WithBorderColor:(UIColor *)color withBorderWidth:(CGFloat)width;
+
+/**
+ 添加边框
+ 使用CALayer添加边框 可以做到不切割圆角加线
+ 
+ @param color 颜色 例：[UIColor BlackColor] 方法里会转成CGColor
+ @param width 宽度 例：1.0f
+ */
+- (void)weicy_useCALayerMakeBorderLineWithBorderColor:(UIColor *)color borderWidth:(CGFloat)width;
+
 #pragma mark - 阴影
 /// layer 添加全部阴影
 /// @param color 阴影颜色,可设置透明度等.
@@ -105,6 +169,52 @@ NS_ASSUME_NONNULL_BEGIN
 
  */
 - (void)weicy_gradientBgColorWithColors:(NSArray*)colors locations:(NSArray*)locations startPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint;
+
+#pragma mark - 抖动
+
+/// 视图抖动
+/// 按照默认状态抖动
+- (void)weicy_shake;
+
+/// 视图抖动
+/// @param times 抖动次数
+/// @param delta 抖动幅度
+- (void)weicy_shake:(int)times withDelta:(CGFloat)delta;
+
+/// 视图抖动
+/// @param times 抖动次数
+/// @param delta 抖动幅度
+/// @param handler 结束回调
+- (void)weicy_shake:(int)times withDelta:(CGFloat)delta completion:(nullable void (^)(void))handler;
+
+/// 视图以自定义的速度抖动
+/// @param times 抖动次数
+/// @param delta 抖动幅度
+/// @param interval 一次抖动的时间
+- (void)weicy_shake:(int)times withDelta:(CGFloat)delta speed:(NSTimeInterval)interval;
+
+/// 视图以自定义的速度抖动
+/// @param times 抖动次数
+/// @param delta 抖动幅度
+/// @param interval 一次抖动的时间
+/// @param handler 结束回调
+- (void)weicy_shake:(int)times withDelta:(CGFloat)delta speed:(NSTimeInterval)interval completion:(nullable void (^)(void))handler;
+
+/// 视图以自定义的速度和方向抖动
+/// @param times 抖动次数
+/// @param delta 抖动幅度
+/// @param interval 一次抖动的时间
+/// @param shakeDirection 抖动方向
+- (void)weicy_shake:(int)times withDelta:(CGFloat)delta speed:(NSTimeInterval)interval shakeDirection:(WeicyShakeDirection)shakeDirection;
+
+/// 视图以自定义的速度和方向抖动
+/// @param times 抖动次数
+/// @param delta 抖动幅度
+/// @param interval 一次抖动的时间
+/// @param shakeDirection 抖动方向
+/// @param completion 结束回掉
+- (void)weicy_shake:(int)times withDelta:(CGFloat)delta speed:(NSTimeInterval)interval shakeDirection:(WeicyShakeDirection)shakeDirection completion:(nullable void (^)(void))completion;
+
 
 @end
 
