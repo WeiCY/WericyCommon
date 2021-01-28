@@ -15,6 +15,7 @@ typedef enum : NSUInteger {
     NaviBarLoaderPositionRight,
 } NaviBarLoaderPosition;
 
+/// 导航栏按钮点击菊花展示
 @interface UINavigationItem (WeicyCommon)
 
 /// 开始动画

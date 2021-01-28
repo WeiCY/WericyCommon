@@ -215,6 +215,13 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param completion 结束回掉
 - (void)weicy_shake:(int)times withDelta:(CGFloat)delta speed:(NSTimeInterval)interval shakeDirection:(WeicyShakeDirection)shakeDirection completion:(nullable void (^)(void))completion;
 
+#pragma mark - 动画
+
+/// 移动动画
+/// @param destination 目标点
+/// @param duration 动画时间
+/// @param option 动画option
+- (void)weicy_moveToPoint:(CGPoint)destination duration:(float)duration option:(UIViewAnimationOptions)option;
 
 @end
 

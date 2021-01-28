@@ -27,5 +27,6 @@
 #import "UIButton+WeicyCommon.h"
 #import "UIGestureRecognizer+WeicyCommon.h"
 #import "UILabel+WeicyCommon.h"
+#import "UITextField+WeicyCommon.h"
 
 #endif /* WeicyCategory_h */

@@ -9,8 +9,6 @@
 
 #import "WeicyCommon/WeicyCommon.h"
 
-#import "UIView+Animation_yf.h"
-
 @interface ViewController ()
 
 @property (nonatomic, strong) UIButton *btn;
@@ -25,19 +23,28 @@
     
     self.view.backgroundColor = UIColor.redColor;
     
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.backgroundColor = [UIColor blueColor];
+//    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+//    button.backgroundColor = [UIColor blueColor];
+//
+//    button.frame = CGRectMake(100, 100, 100, 100);
+//    [self.view addSubview:button];
+//    self.btn = button;
     
-    button.frame = CGRectMake(100, 100, 100, 100);
-    [self.view addSubview:button];
-    self.btn = button;
+    UITextField *textfield = [[UITextField alloc] initWithFrame:CGRectMake(30, 150, 200, 40)];
+    textfield.backgroundColor = UIColor.whiteColor;
+    textfield.placeholder = @"ddddd";
+//    textfield.placeholderColor = UIColor.redColor;
+    textfield.font = [UIFont systemFontOfSize:12];
+    
+    textfield.placegolderFont = [UIFont boldSystemFontOfSize:19];
+    textfield.limitCount = 4;
+    [self.view addSubview:textfield];
     
     // Do any additional setup after loading the view.
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-//    [self.btn moveTo:CGPointMake(100, 300) duration:2 option:UIViewAnimationOptionBeginFromCurrentState];
-    [self.btn curlDown:0.3];
+
 }
 
 @end

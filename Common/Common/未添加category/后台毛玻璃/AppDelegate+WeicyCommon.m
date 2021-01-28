@@ -11,6 +11,8 @@
 
 #import <objc/runtime.h>
 
+#define EffectViewKey @"effectViewKey"
+
 @interface AppDelegate ()
 
 @property (nonatomic, strong) UIView *effectView;
@@ -43,12 +45,12 @@
 
 - (void)setEffectView:(UIView *)effectView {
     [self willChangeValueForKey:@"_effectView"];
-    objc_setAssociatedObject(self, @"effectView", effectView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, EffectViewKey, effectView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     [self didChangeValueForKey:@"_effectView"];
 }
 
 - (UIView *)effectView {
-    return objc_getAssociatedObject(self, @"effectView");
+    return objc_getAssociatedObject(self, EffectViewKey);
 }
 
 @end

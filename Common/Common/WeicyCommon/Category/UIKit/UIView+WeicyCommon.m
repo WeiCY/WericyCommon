@@ -509,4 +509,14 @@
           completion:completionHandler];
     }];
 }
+
+#pragma mark - 动画
+- (void)weicy_moveToPoint:(CGPoint)destination duration:(float)duration option:(UIViewAnimationOptions)option {
+    [UIView animateWithDuration:duration delay:0.0 options:option animations:^{
+        self.frame = CGRectMake(destination.x, destination.y, self.weicy_width, self.weicy_height);
+    } completion:^(BOOL finished) {
+        
+    }];
+}
+
 @end
