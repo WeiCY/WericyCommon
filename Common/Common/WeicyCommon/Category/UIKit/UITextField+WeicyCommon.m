@@ -62,7 +62,12 @@
 
 - (void)textfieldChange {
     if (self.text.length > self.limitCount) {
-        self.text = [self.text substringToIndex:self.limitCount];
+        UITextRange *markedRange = [self markedTextRange];
+        if (markedRange) {
+            return;
+        }
+        NSRange range = [self.text rangeOfComposedCharacterSequenceAtIndex:self.limitCount];
+        self.text = [self.text substringToIndex:range.location];
     }
 }
 
