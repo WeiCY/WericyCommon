@@ -23,8 +23,6 @@
 		F574B4AF25B049E5000ADB62 /* ZCChinaLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B4AD25B049E5000ADB62 /* ZCChinaLocation.m */; };
 		F574B50325B530B3000ADB62 /* LBSystemPhotoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B50125B530B3000ADB62 /* LBSystemPhotoPicker.m */; };
 		F574B5A125B576C2000ADB62 /* UIView+draggable_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B59A25B576C2000ADB62 /* UIView+draggable_yf.m */; };
-		F574B60A25B5904B000ADB62 /* UITextView+PlaceHolder_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B60725B5904B000ADB62 /* UITextView+PlaceHolder_yf.m */; };
-		F574B60B25B5904B000ADB62 /* UITextView+Select_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B60825B5904B000ADB62 /* UITextView+Select_yf.m */; };
 		F58F2C8B25A5975C0024DB83 /* YYTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F58F2C8A25A5975C0024DB83 /* YYTimer.m */; };
 		F5953954257A1FA500D87FDA /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = F5953953257A1FA500D87FDA /* UIView+Toast.m */; };
 		F5A17E2B25BFB04E00848FC5 /* WeicyUpdateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A17E2A25BFB04E00848FC5 /* WeicyUpdateTool.m */; };
@@ -109,10 +107,6 @@
 		F574B50225B530B3000ADB62 /* LBSystemPhotoPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSystemPhotoPicker.h; sourceTree = "<group>"; };
 		F574B59525B576C2000ADB62 /* UIView+draggable_yf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+draggable_yf.h"; sourceTree = "<group>"; };
 		F574B59A25B576C2000ADB62 /* UIView+draggable_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+draggable_yf.m"; sourceTree = "<group>"; };
-		F574B60625B5904B000ADB62 /* UITextView+PlaceHolder_yf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+PlaceHolder_yf.h"; sourceTree = "<group>"; };
-		F574B60725B5904B000ADB62 /* UITextView+PlaceHolder_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+PlaceHolder_yf.m"; sourceTree = "<group>"; };
-		F574B60825B5904B000ADB62 /* UITextView+Select_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Select_yf.m"; sourceTree = "<group>"; };
-		F574B60925B5904B000ADB62 /* UITextView+Select_yf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Select_yf.h"; sourceTree = "<group>"; };
 		F58F2C8925A5975C0024DB83 /* YYTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTimer.h; sourceTree = "<group>"; };
 		F58F2C8A25A5975C0024DB83 /* YYTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTimer.m; sourceTree = "<group>"; };
 		F5953952257A1FA500D87FDA /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
@@ -288,7 +282,6 @@
 				F53E43A125B82D3500D35FC8 /* Location */,
 				F53E438025B82B2800D35FC8 /* Map */,
 				F53E437925B82B0500D35FC8 /* File */,
-				F574B5E625B586B0000ADB62 /* UIText */,
 				F574B59325B576C2000ADB62 /* UIView */,
 				F574B4AE25B049E5000ADB62 /* ZCChinaLocation.h */,
 				F574B4AD25B049E5000ADB62 /* ZCChinaLocation.m */,
@@ -326,17 +319,6 @@
 				F574B59A25B576C2000ADB62 /* UIView+draggable_yf.m */,
 			);
 			path = UIView;
-			sourceTree = "<group>";
-		};
-		F574B5E625B586B0000ADB62 /* UIText */ = {
-			isa = PBXGroup;
-			children = (
-				F574B60625B5904B000ADB62 /* UITextView+PlaceHolder_yf.h */,
-				F574B60725B5904B000ADB62 /* UITextView+PlaceHolder_yf.m */,
-				F574B60925B5904B000ADB62 /* UITextView+Select_yf.h */,
-				F574B60825B5904B000ADB62 /* UITextView+Select_yf.m */,
-			);
-			path = UIText;
 			sourceTree = "<group>";
 		};
 		F5A17E4525C1120800848FC5 /* 导航栏 */ = {
@@ -662,7 +644,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F574B60A25B5904B000ADB62 /* UITextView+PlaceHolder_yf.m in Sources */,
 				F5D8681D2575DE0700A251B5 /* NSArray+WeicyCommon.m in Sources */,
 				F5A17E6225C13F5900848FC5 /* AppDelegate+WeicyCommon.m in Sources */,
 				F5D868532576138100A251B5 /* NSDictionary+WeicyCommon.m in Sources */,
@@ -676,7 +657,6 @@
 				F5D867DB2575DC6300A251B5 /* ViewController.m in Sources */,
 				F5D8694D2577398000A251B5 /* UIControl+WeicyCommon.m in Sources */,
 				F5A17E9025C25CBD00848FC5 /* UITextField+WeicyCommon.m in Sources */,
-				F574B60B25B5904B000ADB62 /* UITextView+Select_yf.m in Sources */,
 				F524180B25820761003713B8 /* UIScrollView+WeicyCommon.m in Sources */,
 				F5D8690D257646A300A251B5 /* UIDevice+WeicyCommon.m in Sources */,
 				F5953954257A1FA500D87FDA /* UIView+Toast.m in Sources */,
