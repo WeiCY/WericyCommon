@@ -26,6 +26,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) NSURL * _Nonnull libraryURL;
 @property (nonatomic, readonly) NSString * _Nonnull libraryPath;
 
+/// temp
+@property (nonatomic, readonly) NSString * _Nonnull tmpPath;
+
 /// Application's Bundle Name (show in SpringBoard).
 @property (nullable, nonatomic, readonly) NSString *appBundleName;
 

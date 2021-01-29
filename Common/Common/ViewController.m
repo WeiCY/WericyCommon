@@ -40,6 +40,11 @@
     textfield.limitCount = 4;
     [self.view addSubview:textfield];
     
+    NSLog(@"%@",[WeicyFileTool weicy_listFilesInTmpDirectoryByDeep:YES]);
+    NSLog(@"%@",[UIApplication sharedApplication].tmpPath);
+    NSString *path = [NSString stringWithFormat:@"%@%@",[UIApplication sharedApplication].tmpPath,@"33"];
+    NSLog(@"%ld",[WeicyFileTool weicy_createDirectoryAtPath:path]);
+    NSLog(@"%@",[WeicyFileTool weicy_listFilesInTmpDirectoryByDeep:YES]);
     // Do any additional setup after loading the view.
 }
 
