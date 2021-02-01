@@ -15,5 +15,6 @@
 #import "WeicyAppTool.h"
 #import "WeicyUpdateTool.h"
 #import "WeicyFileTool.h"
+#import "WeicySystemSoundTool.h"
 
 #endif /* WeicyTool_h */

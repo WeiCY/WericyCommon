@@ -15,6 +15,7 @@
 		F53E438325B82B2800D35FC8 /* YFLocationConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = F53E438125B82B2800D35FC8 /* YFLocationConverter.m */; };
 		F53E43A425B82D5F00D35FC8 /* WeicyLocationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F53E43A325B82D5F00D35FC8 /* WeicyLocationTool.m */; };
 		F554012225876CF500284586 /* UIGestureRecognizer+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F554012125876CF500284586 /* UIGestureRecognizer+WeicyCommon.m */; };
+		F558D15625C4016100D2E47E /* WeicyGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = F558D15525C4016100D2E47E /* WeicyGuideView.m */; };
 		F569FA7F25A2F874000835DE /* UIViewController+ImagePickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F569FA7D25A2F874000835DE /* UIViewController+ImagePickerManager.m */; };
 		F572D1EC2591A23300594AE3 /* UILabel+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F572D1EB2591A23300594AE3 /* UILabel+WeicyCommon.m */; };
 		F572D2CE2593257800594AE3 /* UIControl+WeicyAddForCombo.m in Sources */ = {isa = PBXBuildFile; fileRef = F572D2CD2593257800594AE3 /* UIControl+WeicyAddForCombo.m */; };
@@ -24,6 +25,7 @@
 		F574B5A125B576C2000ADB62 /* UIView+draggable_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B59A25B576C2000ADB62 /* UIView+draggable_yf.m */; };
 		F58F2C8B25A5975C0024DB83 /* YYTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F58F2C8A25A5975C0024DB83 /* YYTimer.m */; };
 		F5953954257A1FA500D87FDA /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = F5953953257A1FA500D87FDA /* UIView+Toast.m */; };
+		F59C5E5925C7DFCF00CC5BE8 /* WeicySystemSoundTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F59C5E5825C7DFCF00CC5BE8 /* WeicySystemSoundTool.m */; };
 		F5A17E2B25BFB04E00848FC5 /* WeicyUpdateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A17E2A25BFB04E00848FC5 /* WeicyUpdateTool.m */; };
 		F5A17E3F25BFE79800848FC5 /* WeicyFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A17E3E25BFE79800848FC5 /* WeicyFileTool.m */; };
 		F5A17E4825C1122A00848FC5 /* UINavigationItem+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A17E4725C1122A00848FC5 /* UINavigationItem+WeicyCommon.m */; };
@@ -90,6 +92,8 @@
 		F53E43A325B82D5F00D35FC8 /* WeicyLocationTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeicyLocationTool.m; sourceTree = "<group>"; };
 		F554012025876CF500284586 /* UIGestureRecognizer+WeicyCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+WeicyCommon.h"; sourceTree = "<group>"; };
 		F554012125876CF500284586 /* UIGestureRecognizer+WeicyCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+WeicyCommon.m"; sourceTree = "<group>"; };
+		F558D15425C4016100D2E47E /* WeicyGuideView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeicyGuideView.h; sourceTree = "<group>"; };
+		F558D15525C4016100D2E47E /* WeicyGuideView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeicyGuideView.m; sourceTree = "<group>"; };
 		F569FA7D25A2F874000835DE /* UIViewController+ImagePickerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ImagePickerManager.m"; sourceTree = "<group>"; };
 		F569FA7E25A2F874000835DE /* UIViewController+ImagePickerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ImagePickerManager.h"; sourceTree = "<group>"; };
 		F572D1EA2591A23300594AE3 /* UILabel+WeicyCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+WeicyCommon.h"; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 		F58F2C8A25A5975C0024DB83 /* YYTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTimer.m; sourceTree = "<group>"; };
 		F5953952257A1FA500D87FDA /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
 		F5953953257A1FA500D87FDA /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		F59C5E5725C7DFCF00CC5BE8 /* WeicySystemSoundTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeicySystemSoundTool.h; sourceTree = "<group>"; };
+		F59C5E5825C7DFCF00CC5BE8 /* WeicySystemSoundTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeicySystemSoundTool.m; sourceTree = "<group>"; };
 		F5A17E2925BFB04E00848FC5 /* WeicyUpdateTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeicyUpdateTool.h; sourceTree = "<group>"; };
 		F5A17E2A25BFB04E00848FC5 /* WeicyUpdateTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeicyUpdateTool.m; sourceTree = "<group>"; };
 		F5A17E3D25BFE79800848FC5 /* WeicyFileTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeicyFileTool.h; sourceTree = "<group>"; };
@@ -267,9 +273,19 @@
 			path = Location;
 			sourceTree = "<group>";
 		};
+		F558D15225C4014500D2E47E /* GuideView */ = {
+			isa = PBXGroup;
+			children = (
+				F558D15425C4016100D2E47E /* WeicyGuideView.h */,
+				F558D15525C4016100D2E47E /* WeicyGuideView.m */,
+			);
+			path = GuideView;
+			sourceTree = "<group>";
+		};
 		F572D2CB2593256200594AE3 /* Action */ = {
 			isa = PBXGroup;
 			children = (
+				F558D15225C4014500D2E47E /* GuideView */,
 				F5A17ECC25C3DAAF00848FC5 /* File */,
 				F53E43A125B82D3500D35FC8 /* Location */,
 				F53E438025B82B2800D35FC8 /* Map */,
@@ -466,6 +482,8 @@
 				F5A17E2A25BFB04E00848FC5 /* WeicyUpdateTool.m */,
 				F5A17E3D25BFE79800848FC5 /* WeicyFileTool.h */,
 				F5A17E3E25BFE79800848FC5 /* WeicyFileTool.m */,
+				F59C5E5725C7DFCF00CC5BE8 /* WeicySystemSoundTool.h */,
+				F59C5E5825C7DFCF00CC5BE8 /* WeicySystemSoundTool.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -662,6 +680,7 @@
 				F5953954257A1FA500D87FDA /* UIView+Toast.m in Sources */,
 				F5D868602576173F00A251B5 /* WeicyRegularExpressionTool.m in Sources */,
 				F574B4AF25B049E5000ADB62 /* ZCChinaLocation.m in Sources */,
+				F59C5E5925C7DFCF00CC5BE8 /* WeicySystemSoundTool.m in Sources */,
 				F5D868722576340400A251B5 /* WeicyAppTool.m in Sources */,
 				F574B50325B530B3000ADB62 /* LBSystemPhotoPicker.m in Sources */,
 				F52418262582FF55003713B8 /* UIButton+WeicyCommon.m in Sources */,
@@ -675,6 +694,7 @@
 				F5D8686925762F5700A251B5 /* WeicyJumpTool.m in Sources */,
 				F5D8689E25763F8A00A251B5 /* UIColor+WeicyCommon.m in Sources */,
 				F58F2C8B25A5975C0024DB83 /* YYTimer.m in Sources */,
+				F558D15625C4016100D2E47E /* WeicyGuideView.m in Sources */,
 				F572D3B62595831000594AE3 /* AppDelegate+WeicyGT.m in Sources */,
 				F53E438325B82B2800D35FC8 /* YFLocationConverter.m in Sources */,
 				F5B5AF98259C71530057AE11 /* AppDelegate+WeicyUM.m in Sources */,
