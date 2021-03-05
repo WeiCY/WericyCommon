@@ -259,4 +259,26 @@ static NSTimeInterval _WCY_CGImageSourceGetGIFFrameDelayAtIndex(CGImageSourceRef
     return QRCodeImage;
 }
 
+
+/// 创建动态图片的具体实现
++ (UIImage *)weicy_imageWithLightImage:(UIImage *)lightImage darkImage:(UIImage *)darkImage {
+    if (!lightImage) {
+        return nil;
+    }
+    if (@available(iOS 13.0, *)) {
+        UITraitCollection *lightCollection = [UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleLight];
+        UITraitCollection *darkCollection = [UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleDark];
+        UITraitCollection *unspecifiedCollection = [UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleLight];
+        UIImage *image = UIImage.new;
+        UIImage *darkPure = [darkImage.imageAsset imageWithTraitCollection:unspecifiedCollection];
+        UIImage *lightPure = [lightImage.imageAsset imageWithTraitCollection:unspecifiedCollection];
+        [image.imageAsset registerImage:lightPure withTraitCollection:lightCollection];
+        [image.imageAsset registerImage:darkPure withTraitCollection:darkCollection];
+        [image.imageAsset registerImage:lightPure withTraitCollection:unspecifiedCollection];
+        return image;
+    } else {
+        return lightImage;
+    }
+}
+
 @end

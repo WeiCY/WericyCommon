@@ -27,6 +27,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param alpha 透明度
 + (UIColor *)weicy_colorWithHexString:(NSString *)color alpha:(CGFloat)alpha;
 
+/// 适配不同模式下的颜色
+/// @param lightColor light环境下的颜色
+/// @param darkColor dark环境下的颜色
++ (UIColor *)weicy_colorWithLightColor:(UIColor *)lightColor darkColor:(UIColor *)darkColor;
+
 @end
 
 NS_ASSUME_NONNULL_END

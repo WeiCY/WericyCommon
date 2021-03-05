@@ -14,7 +14,7 @@
 }
 
 + (UIColor *)weicy_randomColorWithAlpha:(CGFloat)alpha {
-   
+    
     NSInteger redValue = arc4random() % 255;
     NSInteger greenValue = arc4random() % 255;
     NSInteger blueValue = arc4random() % 255;
@@ -73,6 +73,23 @@
     [[NSScanner scannerWithString:bString] scanHexInt:&b];
     
     return [UIColor colorWithRed:((float)r / 255.0f) green:((float)g / 255.0f) blue:((float)b / 255.0f) alpha:alpha];
+}
+
++ (UIColor *)weicy_colorWithLightColor:(UIColor *)lightColor darkColor:(UIColor *)darkColor {
+    if (@available(iOS 13.0, *)) {
+        return [self colorWithDynamicProvider:^UIColor * _Nonnull(UITraitCollection * _Nonnull traitCollection) {
+            switch (traitCollection.userInterfaceStyle) {
+                case UIUserInterfaceStyleDark:
+                    return darkColor ?: lightColor;
+                case UIUserInterfaceStyleLight:
+                case UIUserInterfaceStyleUnspecified:
+                default:
+                    return lightColor;
+            }
+        }];
+    } else {
+        return lightColor;
+    }
 }
 
 @end

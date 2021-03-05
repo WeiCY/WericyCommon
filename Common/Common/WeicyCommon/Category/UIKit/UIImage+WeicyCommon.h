@@ -64,6 +64,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param logoImageBorderColor logo 外边框颜色
 + (UIImage *)weicy_generateQRCodeWithString:(NSString *)string size:(CGFloat)size logoImage:(UIImage *)logoImage ratio:(CGFloat)ratio logoImageCornerRadius:(CGFloat)logoImageCornerRadius logoImageBorderWidth:(CGFloat)logoImageBorderWidth logoImageBorderColor:(UIColor *)logoImageBorderColor;
 
+/// 适配不同模式下的颜色
+/// @param lightImage light环境下的图片
+/// @param darkImage dark环境下的图片
++ (UIImage *)weicy_imageWithLightImage:(UIImage *)lightImage darkImage:(UIImage *)darkImage;
+
 @end
 
 NS_ASSUME_NONNULL_END
