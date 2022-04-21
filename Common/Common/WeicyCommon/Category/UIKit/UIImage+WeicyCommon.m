@@ -259,6 +259,13 @@ static NSTimeInterval _WCY_CGImageSourceGetGIFFrameDelayAtIndex(CGImageSourceRef
     return QRCodeImage;
 }
 
++ (UIImage *)weicy_generateCode128WithString:(NSString *)string size:(CGSize)size {
+    NSData *codeData = [string dataUsingEncoding:NSUTF8StringEncoding];
+    CIFilter *filter = [CIFilter filterWithName:@"CICode128BarcodeGenerator" withInputParameters:@{@"inputMessage": codeData, @"inputQuietSpace": @.0}];
+    /* @{@"inputMessage": codeData, @"inputQuietSpace": @(.0), @"inputBarcodeHeight": @(size.width / 3)} */
+    UIImage *codeImage = [UIImage scaleImage:filter.outputImage toSize:size];
+    return codeImage;
+}
 
 /// 创建动态图片的具体实现
 + (UIImage *)weicy_imageWithLightImage:(UIImage *)lightImage darkImage:(UIImage *)darkImage {
@@ -279,6 +286,39 @@ static NSTimeInterval _WCY_CGImageSourceGetGIFFrameDelayAtIndex(CGImageSourceRef
     } else {
         return lightImage;
     }
+}
+
+#pragma mark - Util functions
+
+// 缩放图片(生成高质量图片）
++ (UIImage *)scaleImage:(CIImage *)image toSize:(CGSize)size {
+    
+    //! 将CIImage转成CGImageRef
+    CGRect integralRect = image.extent;// CGRectIntegral(image.extent);// 将rect取整后返回，origin取舍，size取入
+    CGImageRef imageRef = [[CIContext context] createCGImage:image fromRect:integralRect];
+    
+    //! 创建上下文
+    CGFloat sideScale = fminf(size.width / integralRect.size.width, size.width / integralRect.size.height) * [UIScreen mainScreen].scale;// 计算需要缩放的比例
+    size_t contextRefWidth = ceilf(integralRect.size.width * sideScale);
+    size_t contextRefHeight = ceilf(integralRect.size.height * sideScale);
+    CGColorSpaceRef colorSpaceRef = CGColorSpaceCreateDeviceGray();
+    CGContextRef contextRef = CGBitmapContextCreate(nil, contextRefWidth, contextRefHeight, 8, 0, colorSpaceRef, (CGBitmapInfo)kCGImageAlphaNone);// 灰度、不透明
+    CGColorSpaceRelease(colorSpaceRef);
+    
+    CGContextSetInterpolationQuality(contextRef, kCGInterpolationNone);// 设置上下文无插值
+    CGContextScaleCTM(contextRef, sideScale, sideScale);// 设置上下文缩放
+    CGContextDrawImage(contextRef, integralRect, imageRef);// 在上下文中的integralRect中绘制imageRef
+    CGImageRelease(imageRef);
+    
+    //! 从上下文中获取CGImageRef
+    CGImageRef scaledImageRef = CGBitmapContextCreateImage(contextRef);
+    CGContextRelease(contextRef);
+    
+    //! 将CGImageRefc转成UIImage
+    UIImage *scaledImage = [UIImage imageWithCGImage:scaledImageRef scale:[UIScreen mainScreen].scale orientation:UIImageOrientationUp];
+    CGImageRelease(scaledImageRef);
+    
+    return scaledImage;
 }
 
 @end
